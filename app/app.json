@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Calendario Maya - Mano Electrica Azul",
+    "slug": "calendario-maya-manoelectricaazul",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "permissions": [
+        "INTERNET"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.manoelectricaazul.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f58ad89e-70b9-4c2e-8141-7a062c1b4405"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f58ad89e-70b9-4c2e-8141-7a062c1b4405"
+      }
+    },
+    "owner": "manoelectricaazul"
+  }
+}
