@@ -10,17 +10,6 @@ function getUTCDateOnly(date: Date): Date {
   return new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
 }
 
-// Función para mostrar fecha local basada en fecha UTC sin horas
-function mostrarFechaLocalDesdeUTC(fechaUTC: Date): string {
-  const fechaLocal = new Date(fechaUTC.getUTCFullYear(), fechaUTC.getUTCMonth(), fechaUTC.getUTCDate());
-  return fechaLocal.toLocaleDateString('es-ES', {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
-}
-
 export default function App() {
   const hoy = getUTCDateOnly(new Date());
   const [fechaSeleccionada, setFechaSeleccionada] = useState(hoy);
@@ -45,9 +34,7 @@ export default function App() {
   };
 
   // Normalizamos la fecha a UTC sin horas antes de calcular el Kin
-  const fechaUTC = getUTCDateOnly(fechaSeleccionada);
-  const kin = kinFromDate(fechaUTC);
-  const fechaParaMostrar = mostrarFechaLocalDesdeUTC(fechaUTC);
+  const kin = kinFromDate(fechaSeleccionada);
 
   const reflexionActual = typeof reflexiones[kin.num] === 'string'
     ? reflexiones[kin.num]
