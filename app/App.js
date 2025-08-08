@@ -44,10 +44,20 @@ export default function App() {
     return fecha.toLocaleDateString('es-ES', opciones);
   };
 
-  // Normalizamos la fecha a UTC sin horas antes de calcular el Kin
-  const fechaUTC = getUTCDateOnly(fechaSeleccionada);
-  const kin = kinFromDate(fechaUTC);
-  const fechaParaMostrar = mostrarFechaLocalDesdeUTC(fechaUTC);
+// Funciones auxiliares para obtener fecha local sin horas y convertir a UTC
+function getLocalDateOnly(date) {
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+}
+
+function localDateToUTC(date) {
+  return new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+}
+
+// Obtener fecha local sin horas y convertir a UTC para calcular Kin
+  const fechaLocalSinHora = getLocalDateOnly(fechaSeleccionada);
+  const fechaUTCParaKin = localDateToUTC(fechaLocalSinHora);
+  const kin = kinFromDate(fechaUTCParaKin);
+  const fechaParaMostrar = mostrarFechaLocalDesdeUTC(fechaUTCParaKin);
 
   const reflexionActual = typeof reflexiones[kin.num] === 'string'
     ? reflexiones[kin.num]
@@ -77,13 +87,14 @@ export default function App() {
 
   const cambiarFechaManual = () => {
     if (inputFecha.match(/^\d{4}-\d{2}-\d{2}$/)) {
-      const nuevaFecha = new Date(inputFecha + 'T00:00:00');
-      if (!isNaN(nuevaFecha.getTime())) {
-        setFechaSeleccionada(getUTCDateOnly(nuevaFecha));
-        setErrorFecha('');
-      } else {
-        setErrorFecha('Fecha inválida');
-      }
+      const [yyyy, mm, dd] = inputFecha.split('-').map(Number);
+      const nuevaFecha = new Date(Date.UTC(yyyy, mm - 1, dd));
+    if (!isNaN(nuevaFecha.getTime())) {
+      setFechaSeleccionada(nuevaFecha);
+      setErrorFecha('');
+    } else {
+      setErrorFecha('Fecha inválida');
+    }
     } else {
       setErrorFecha('Formato incorrecto. Usa YYYY-MM-DD');
     }
