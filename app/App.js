@@ -22,8 +22,9 @@ function mostrarFechaLocalDesdeUTC(fechaUTC: Date): string {
 }
 
 export default function App() {
-  const hoy = getUTCDateOnly(new Date());
-  const [fechaSeleccionada, setFechaSeleccionada] = useState(hoy);
+  const hoyLocal = new Date();
+  const hoyMedianocheLocal = new Date(hoyLocal.getFullYear(), hoyLocal.getMonth(), hoyLocal.getDate());
+  const [fechaSeleccionada, setFechaSeleccionada] = useState(hoyMedianocheLocal);
   const [inputFecha, setInputFecha] = useState('');
   const [errorFecha, setErrorFecha] = useState('');
 
