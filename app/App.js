@@ -69,26 +69,28 @@ function localDateToUTC(date) {
     : "No hay reflexión para este Kin.";
 
   const diaAnterior = () => {
-    const nuevaFecha = getUTCDateOnly(new Date(fechaSeleccionada));
+  const nuevaFecha = new Date(fechaSeleccionada.getFullYear(), fechaSeleccionada.getMonth(), fechaSeleccionada.getDate());
     nuevaFecha.setDate(nuevaFecha.getDate() - 1);
     setFechaSeleccionada(nuevaFecha);
     setInputFecha('');
     setErrorFecha('');
-  };
+};
 
   const diaSiguiente = () => {
-    const nuevaFecha = getUTCDateOnly(new Date(fechaSeleccionada));
+    const nuevaFecha = new Date(fechaSeleccionada.getFullYear(), fechaSeleccionada.getMonth(), fechaSeleccionada.getDate());
     nuevaFecha.setDate(nuevaFecha.getDate() + 1);
     setFechaSeleccionada(nuevaFecha);
     setInputFecha('');
     setErrorFecha('');
-  };
+};
 
   const volverHoy = () => {
-    setFechaSeleccionada(getUTCDateOnly(new Date()));
+    const hoyLocal = new Date();
+    const hoyMedianocheLocal = new Date(hoyLocal.getFullYear(), hoyLocal.getMonth(), hoyLocal.getDate());
+    setFechaSeleccionada(hoyMedianocheLocal);
     setInputFecha('');
     setErrorFecha('');
-  };
+};
 
   const cambiarFechaManual = () => {
   if (inputFecha.match(/^\d{4}-\d{2}-\d{2}$/)) {
