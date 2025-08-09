@@ -57,7 +57,12 @@ function localDateToUTC(date) {
   const fechaLocalSinHora = getLocalDateOnly(fechaSeleccionada);
   const fechaUTCParaKin = localDateToUTC(fechaLocalSinHora);
   const kin = kinFromDate(fechaUTCParaKin);
-  const fechaParaMostrar = mostrarFechaLocalDesdeUTC(fechaUTCParaKin);
+  const fechaParaMostrar = fechaLocalSinHora.toLocaleDateString('es-ES', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+});
 
   const reflexionActual = typeof reflexiones[kin.num] === 'string'
     ? reflexiones[kin.num]
@@ -86,19 +91,19 @@ function localDateToUTC(date) {
   };
 
   const cambiarFechaManual = () => {
-    if (inputFecha.match(/^\d{4}-\d{2}-\d{2}$/)) {
-      const [yyyy, mm, dd] = inputFecha.split('-').map(Number);
-      const nuevaFecha = new Date(Date.UTC(yyyy, mm - 1, dd));
+  if (inputFecha.match(/^\d{4}-\d{2}-\d{2}$/)) {
+    const [yyyy, mm, dd] = inputFecha.split('-').map(Number);
+    const nuevaFecha = new Date(yyyy, mm - 1, dd); // medianoche local
     if (!isNaN(nuevaFecha.getTime())) {
       setFechaSeleccionada(nuevaFecha);
       setErrorFecha('');
     } else {
       setErrorFecha('Fecha inválida');
     }
-    } else {
-      setErrorFecha('Formato incorrecto. Usa YYYY-MM-DD');
-    }
-  };
+  } else {
+    setErrorFecha('Formato incorrecto. Usa YYYY-MM-DD');
+  }
+};
 
   return (
   <ImageBackground
