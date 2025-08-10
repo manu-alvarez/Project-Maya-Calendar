@@ -1,14 +1,6 @@
 {
   "steps": [
     {
-      "name": "gcr.io/cloud-builders/npm",
-      "args": ["install"]
-    },
-    {
-      "name": "gcr.io/cloud-builders/npm",
-      "args": ["run", "build"]
-    },
-    {
       "name": "gcr.io/cloud-builders/docker",
       "args": [
         "build",
@@ -16,7 +8,14 @@
         "gcr.io/$PROJECT_ID/calendario-maya",
         "."
       ]
-    ]
+    },
+    {
+      "name": "gcr.io/cloud-builders/docker",
+      "args": [
+        "push",
+        "gcr.io/$PROJECT_ID/calendario-maya"
+      ]
+    }
   ],
   "images": [
     "gcr.io/$PROJECT_ID/calendario-maya"
