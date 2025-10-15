@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <style>
+    .title { font: 700 22px 'Helvetica Neue', Arial, sans-serif; fill: #0d47a1; }
+    .subtitle { font: 400 14px 'Helvetica Neue', Arial, sans-serif; fill: #263238; }
+    .block-title { font: 600 16px 'Helvetica Neue', Arial, sans-serif; fill: #1e88e5; }
+    .legend-title { font: 600 14px 'Helvetica Neue', Arial, sans-serif; fill: #5e35b1; }
+  </style>
+  <rect width="960" height="540" fill="#fafafa"/>
+</svg>

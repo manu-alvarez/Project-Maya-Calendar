@@ -1,50 +1,36 @@
-# Welcome to your Expo app 👋
+# Carpeta FINAL - Reconstrucción del Proyecto
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Esta carpeta reúne, desde cero, la versión ordenada del portfolio **Calendario Maya Mano Eléctrica Azul**. Aquí iremos recreando los hitos históricos del repositorio original siguiendo la secuencia de commits planificada, sin arrastrar ruido ni archivos obsoletos.
 
-## Get started
+## Cronología de Commits a Replicar
+1. **Sprint 0 · Concepción** – visión, stakeholders, roadmap inicial y artefactos Scrum base.
+2. **Sprint 1 · Setup Fundacional** – esqueleto Expo, backlog del sprint, tableros y métricas de arranque.
+3. **Sprint 2 · MVP Kin Calculator** – algoritmo Tzolkin resumido, dataset base y reporte de QA.
+4. **Sprint 3 · UI/UX Producción** – guías visuales, mockups clave y checklist de release.
+5. **Sprint 4 · Ondas Encantadas** *(pendiente)* – diseño técnico y backlog detallado.
+6. **Sprint 5 · Favoritos y Personalización** *(pendiente)* – arquitectura de datos y flujo funcional.
+7. **Sprint 6 · Notificaciones y Engagement** *(pendiente)* – casos de uso, riesgos y DoR/DoD.
+8. **Sprint 7 · Features Sociales** *(pendiente)* – propuesta social, KPIs esperados.
+9. **Sprint 8 · Excelencia Técnica** *(pendiente)* – migración SQLite y estrategia de analytics/performance.
 
-1. Install dependencies
+Cada commit se construirá de forma incremental y transparente; los sprints pendientes quedarán documentados como planificación futura.
 
-   ```bash
-   npm install
-   ```
+## Estructura
+- `docs/` – Documentación en texto (visión, sprints, reportes).
+- `design/` – Diagramas, wireframes y mockups recreados.
+- `src/` – Código y datos representativos usados en los hitos completados.
+- `assets/` – Recursos gráficos derivados (icons, imágenes de apoyo).
+- `tools/` – Scripts utilitarios asociados a la documentación o al código.
 
-2. Start the app
+## Modo de Trabajo
+- Todo el contenido nuevo se escribirá desde cero tomando como referencia la información del proyecto original.
+- Antes de generar cada commit se validará el checklist correspondiente (Scrum, documentación, artefactos visuales y estado).
+- Los archivos creados aquí serán la base para preparar el repositorio limpio y reproducir el historial en GitHub cuando corresponda.
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Índice
+- docs/
+- design/
+- src/
+- assets/
+- tools/
+- commit-plan.md

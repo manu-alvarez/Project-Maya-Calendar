@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <style>
+    .title { font: 700 22px 'Helvetica Neue', Arial, sans-serif; fill: #0d47a1; }
+    .axis { font: 400 13px 'Helvetica Neue', Arial, sans-serif; fill: #263238; }
+  </style>
+  <rect width="960" height="540" fill="#fafafa"/>
+  <text x="480" y="60" class="title" text-anchor="middle">Roadmap · Gantt</text>
+
+  <text x="150" y="110" class="axis" text-anchor="end">Sprint 0 · Foundation</text>
+  <rect x="180" y="95" width="140" height="20" rx="4" ry="4" fill="#1e88e5" opacity="0.6"/>
+
+  <text x="150" y="150" class="axis" text-anchor="end">Sprint 1 · Setup</text>
+  <rect x="220" y="135" width="160" height="20" rx="4" ry="4" fill="#43a047" opacity="0.6"/>
+
+  <text x="150" y="190" class="axis" text-anchor="end">Sprint 2 · MVP Kin</text>
+  <rect x="260" y="175" width="160" height="20" rx="4" ry="4" fill="#5e35b1" opacity="0.6"/>
+
+  <text x="150" y="230" class="axis" text-anchor="end">Sprint 3 · UI/UX</text>
+  <rect x="300" y="215" width="140" height="20" rx="4" ry="4" fill="#fb8c00" opacity="0.6"/>
+
+  <text x="150" y="270" class="axis" text-anchor="end">Sprint 4 · Ondas</text>
+  <rect x="340" y="255" width="160" height="20" rx="4" ry="4" fill="#1e88e5" opacity="0.4"/>
+
+  <text x="150" y="310" class="axis" text-anchor="end">Sprint 5 · Favoritos</text>
+  <rect x="380" y="295" width="160" height="20" rx="4" ry="4" fill="#43a047" opacity="0.4"/>
+
+  <text x="150" y="350" class="axis" text-anchor="end">Sprint 6 · Notificaciones</text>
+  <rect x="420" y="335" width="160" height="20" rx="4" ry="4" fill="#5e35b1" opacity="0.4"/>
+
+  <text x="150" y="390" class="axis" text-anchor="end">Sprint 7 · Sociales</text>
+  <rect x="460" y="375" width="140" height="20" rx="4" ry="4" fill="#fb8c00" opacity="0.4"/>
+
+  <text x="150" y="430" class="axis" text-anchor="end">Sprint 8 · Excelencia</text>
+  <rect x="500" y="415" width="160" height="20" rx="4" ry="4" fill="#1e88e5" opacity="0.4"/>
+
+  <text x="60" y="500" style="font:400 13px 'Helvetica Neue', Arial; fill:#263238;">Barras sólidas = completado · semitransparente = planificado.</text>
+</svg>

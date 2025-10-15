@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <style>
+    .title { font: 700 22px 'Helvetica Neue', Arial, sans-serif; fill: #0d47a1; }
+    .label { font: 600 16px 'Helvetica Neue', Arial, sans-serif; fill: #1e88e5; }
+  </style>
+  <rect width="960" height="540" fill="#fafafa"/>
+  <text x="480" y="60" class="title" text-anchor="middle">User Flow Principal</text>
+
+  <rect x="120" y="120" width="200" height="120" rx="12" ry="12" fill="#e3f2fd" stroke="#1e88e5" stroke-width="2"/>
+  <text x="220" y="150" class="label" text-anchor="middle">Home</text>
+  <foreignObject x="135" y="160" width="170" height="70">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font:400 13px 'Helvetica Neue', Arial; color:#263238; text-align:center;">
+      <p style="margin:0;">Kin del día, reflexión, navegación a fechas y acceso a favoritos.</p>
+    </body>
+  </foreignObject>
+
+  <rect x="380" y="120" width="200" height="120" rx="12" ry="12" fill="#ede7f6" stroke="#5e35b1" stroke-width="2"/>
+  <text x="480" y="150" class="label" text-anchor="middle">Selector de fecha</text>
+  <foreignObject x="395" y="160" width="170" height="70">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font:400 13px 'Helvetica Neue', Arial; color:#263238; text-align:center;">
+      <p style="margin:0;">Calendario/DatePicker → recalcula kin y destaca la fecha actual.</p>
+    </body>
+  </foreignObject>
+
+  <rect x="640" y="120" width="200" height="120" rx="12" ry="12" fill="#fff3e0" stroke="#fb8c00" stroke-width="2"/>
+  <text x="740" y="150" class="label" text-anchor="middle">Detalle del kin</text>
+  <foreignObject x="655" y="160" width="170" height="70">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font:400 13px 'Helvetica Neue', Arial; color:#263238; text-align:center;">
+      <p style="margin:0;">Información ampliada, glifo, sello, tono, botones compartir/favorito.</p>
+    </body>
+  </foreignObject>
+
+  <rect x="250" y="300" width="200" height="120" rx="12" ry="12" fill="#e8f5e9" stroke="#43a047" stroke-width="2"/>
+  <text x="350" y="330" class="label" text-anchor="middle">Ondas/Favoritos</text>
+  <foreignObject x="265" y="340" width="170" height="70">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font:400 13px 'Helvetica Neue', Arial; color:#263238; text-align:center;">
+      <p style="margin:0;">Planificado: exploración ondas (Sprint 4) y lista de favoritos (Sprint 5).</p>
+    </body>
+  </foreignObject>
+
+  <rect x="520" y="300" width="200" height="120" rx="12" ry="12" fill="#ede7f6" stroke="#5e35b1" stroke-width="2" opacity="0.6"/>
+  <text x="620" y="330" class="label" text-anchor="middle">Notificaciones/Compartir</text>
+  <foreignObject x="535" y="340" width="170" height="70">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font:400 13px 'Helvetica Neue', Arial; color:#263238; text-align:center;">
+      <p style="margin:0;">Planificado: preferencias de notificaciones (Sprint 6) y compartir kin (Sprint 7).</p>
+    </body>
+  </foreignObject>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <style>
+    .title { font: 700 22px 'Helvetica Neue', Arial, sans-serif; fill: #0d47a1; }
+    .axis { font: 400 13px 'Helvetica Neue', Arial, sans-serif; fill: #263238; }
+  </style>
+  <rect width="960" height="540" fill="#fafafa"/>
+  <text x="480" y="60" class="title" text-anchor="middle">Burndown Template</text>
+  <line x1="120" y1="120" x2="120" y2="420" stroke="#263238" stroke-width="1"/>
+  <line x1="120" y1="420" x2="820" y2="420" stroke="#263238" stroke-width="1"/>
+  <polyline points="120,120 820,420" stroke="#1e88e5" stroke-width="2" fill="none" stroke-dasharray="6"/>
+  <polyline points="120,120 260,180 400,240 540,300 680,360 820,380" stroke="#fb8c00" stroke-width="3" fill="none"/>
+  <text x="820" y="440" class="axis" text-anchor="end">Días del sprint</text>
+  <text x="80" y="120" class="axis" text-anchor="end">SP pendientes</text>
+  <text x="60" y="480" class="axis">Nota: línea azul = ideal; línea naranja = progreso real (ejemplo).</text>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <style>
+    .title { font: 700 22px 'Helvetica Neue', Arial, sans-serif; fill: #0d47a1; }
+    .block-title { font: 600 16px 'Helvetica Neue', Arial, sans-serif; fill: #1e88e5; }
+  </style>
+  <rect width="960" height="540" fill="#fafafa"/>
+  <text x="480" y="60" class="title" text-anchor="middle">Backlog por Épicas</text>
+
+  <rect x="60" y="100" width="390" height="160" rx="12" ry="12" fill="#e3f2fd" stroke="#1e88e5" stroke-width="2"/>
+  <text x="255" y="130" class="block-title" text-anchor="middle">EP-01 · Core Calendar Engine</text>
+  <foreignObject x="80" y="140" width="350" height="110">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font:400 13px 'Helvetica Neue', Arial; color:#263238;">
+      <ul style="margin:0; padding-left:18px;">
+        <li>CAL-001 · Kin diario</li>
+        <li>CAL-002 · Cálculo por fecha</li>
+        <li>CAL-003 · Datos Tzolkin</li>
+        <li>CAL-004 · Modo offline</li>
+      </ul>
+    </body>
+  </foreignObject>
+
+  <rect x="510" y="100" width="390" height="160" rx="12" ry="12" fill="#ede7f6" stroke="#5e35b1" stroke-width="2"/>
+  <text x="705" y="130" class="block-title" text-anchor="middle">EP-02 · UX &amp; UI</text>
+  <foreignObject x="530" y="140" width="350" height="110">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font:400 13px 'Helvetica Neue', Arial; color:#263238;">
+      <ul style="margin:0; padding-left:18px;">
+        <li>UI-001 · Dashboard principal</li>
+        <li>UI-002 · Vista detalle kin</li>
+        <li>UI-003 · Sistema navegación</li>
+        <li>UI-004 · Animaciones y visual</li>
+        <li>UI-005 · Modo oscuro</li>
+      </ul>
+    </body>
+  </foreignObject>
+
+  <rect x="60" y="300" width="390" height="160" rx="12" ry="12" fill="#fff3e0" stroke="#fb8c00" stroke-width="2"/>
+  <text x="255" y="330" class="block-title" text-anchor="middle">EP-03 · Navegación Avanzada</text>
+  <foreignObject x="80" y="340" width="350" height="110">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font:400 13px 'Helvetica Neue', Arial; color:#263238;">
+      <ul style="margin:0; padding-left:18px;">
+        <li>NAV-001 · Ondas encantadas</li>
+        <li>NAV-002 · Date range navigator</li>
+        <li>NAV-003 · Favoritos</li>
+        <li>NAV-004 · Búsqueda y filtros</li>
+      </ul>
+    </body>
+  </foreignObject>
+
+  <rect x="510" y="300" width="390" height="160" rx="12" ry="12" fill="#e8f5e9" stroke="#43a047" stroke-width="2"/>
+  <text x="705" y="330" class="block-title" text-anchor="middle">EP-04 · Quality &amp; Polish</text>
+  <foreignObject x="530" y="340" width="350" height="110">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font:400 13px 'Helvetica Neue', Arial; color:#263238;">
+      <ul style="margin:0; padding-left:18px;">
+        <li>QA-001 · Unit testing suite</li>
+        <li>QA-002 · Error handling</li>
+        <li>QA-003 · Performance optimization</li>
+        <li>QA-004 · Documentación & README</li>
+      </ul>
+    </body>
+  </foreignObject>
+
+  <text x="60" y="500" style="font:400 13px 'Helvetica Neue', Arial; fill:#263238;">Resumen actualizado del backlog original para el portfolio.</text>
+</svg>

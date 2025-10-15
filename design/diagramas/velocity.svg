@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <style>
+    .title { font: 700 22px 'Helvetica Neue', Arial, sans-serif; fill: #0d47a1; }
+    .axis { font: 400 13px 'Helvetica Neue', Arial, sans-serif; fill: #263238; }
+  </style>
+  <rect width="960" height="540" fill="#fafafa"/>
+  <text x="480" y="60" class="title" text-anchor="middle">Velocity · SP Plan vs Real</text>
+
+  <g>
+    <rect x="120" y="180" width="40" height="200" fill="#1e88e5"/>
+    <rect x="165" y="220" width="40" height="160" fill="#43a047"/>
+    <text x="145" y="400" class="axis" text-anchor="middle">S0</text>
+  </g>
+  <g>
+    <rect x="240" y="160" width="40" height="220" fill="#1e88e5"/>
+    <rect x="285" y="200" width="40" height="180" fill="#43a047"/>
+    <text x="265" y="400" class="axis" text-anchor="middle">S1</text>
+  </g>
+  <g>
+    <rect x="360" y="140" width="40" height="240" fill="#1e88e5"/>
+    <rect x="405" y="180" width="40" height="200" fill="#43a047"/>
+    <text x="385" y="400" class="axis" text-anchor="middle">S2</text>
+  </g>
+  <g>
+    <rect x="480" y="120" width="40" height="260" fill="#1e88e5"/>
+    <rect x="525" y="160" width="40" height="220" fill="#43a047"/>
+    <text x="505" y="400" class="axis" text-anchor="middle">S3</text>
+  </g>
+  <g>
+    <rect x="600" y="100" width="40" height="280" fill="#1e88e5" opacity="0.4"/>
+    <text x="625" y="400" class="axis" text-anchor="middle">S4</text>
+  </g>
+  <g>
+    <rect x="720" y="100" width="40" height="280" fill="#1e88e5" opacity="0.4"/>
+    <text x="745" y="400" class="axis" text-anchor="middle">S5</text>
+  </g>
+  <g>
+    <rect x="840" y="100" width="40" height="280" fill="#1e88e5" opacity="0.4"/>
+    <text x="865" y="400" class="axis" text-anchor="middle">S6+</text>
+  </g>
+
+  <text x="120" y="430" class="axis">Nota: barras azules = SP planificados, verdes = SP reales.</text>
+</svg>

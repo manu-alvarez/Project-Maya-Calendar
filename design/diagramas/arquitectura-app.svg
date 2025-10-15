@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <style>
+    .title { font: 700 22px 'Helvetica Neue', Arial, sans-serif; fill: #0d47a1; }
+    .block-title { font: 600 16px 'Helvetica Neue', Arial, sans-serif; fill: #1e88e5; }
+  </style>
+  <rect width="960" height="540" fill="#fafafa"/>
+  <text x="480" y="60" class="title" text-anchor="middle">Arquitectura de la App</text>
+
+  <rect x="80" y="100" width="820" height="120" rx="12" ry="12" fill="#e3f2fd" stroke="#1e88e5" stroke-width="2"/>
+  <text x="490" y="130" class="block-title" text-anchor="middle">UI Layer</text>
+  <foreignObject x="100" y="140" width="780" height="70">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font:400 13px 'Helvetica Neue', Arial; color:#263238;">
+      <p style="margin:0; text-align:center;">React Native + Expo · Componentes personalizados · Theming cultural · Expo Router · Feedback háptico</p>
+    </body>
+  </foreignObject>
+
+  <rect x="80" y="240" width="820" height="120" rx="12" ry="12" fill="#ede7f6" stroke="#5e35b1" stroke-width="2"/>
+  <text x="490" y="270" class="block-title" text-anchor="middle">Lógica de Dominio</text>
+  <foreignObject x="100" y="280" width="780" height="70">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font:400 13px 'Helvetica Neue', Arial; color:#263238;">
+      <p style="margin:0; text-align:center;">KinCalculator · Manejo de timezone · Ondas encantadas (Sprint 4) · Favoritos (Sprint 5) · Notificaciones (Sprint 6)</p>
+    </body>
+  </foreignObject>
+
+  <rect x="80" y="380" width="390" height="120" rx="12" ry="12" fill="#fff3e0" stroke="#fb8c00" stroke-width="2"/>
+  <text x="275" y="410" class="block-title" text-anchor="middle">Datos actuales</text>
+  <foreignObject x="100" y="420" width="350" height="60">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font:400 13px 'Helvetica Neue', Arial; color:#263238;">
+      <ul style="margin:0; padding-left:18px;">
+        <li>JSON 260 kines + reflexiones</li>
+        <li>Metadatos sello/tono</li>
+        <li>Cache en memoria</li>
+      </ul>
+    </body>
+  </foreignObject>
+
+  <rect x="510" y="380" width="390" height="120" rx="12" ry="12" fill="#e8f5e9" stroke="#43a047" stroke-width="2"/>
+  <text x="705" y="410" class="block-title" text-anchor="middle">Evolución planeada</text>
+  <foreignObject x="530" y="420" width="350" height="60">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font:400 13px 'Helvetica Neue', Arial; color:#263238;">
+      <ul style="margin:0; padding-left:18px;">
+        <li>SQLite (Sprint 8)</li>
+        <li>Favoritos persistentes</li>
+        <li>Analytics y caching avanzado</li>
+      </ul>
+    </body>
+  </foreignObject>
+</svg>
