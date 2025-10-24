@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420">
+  <style>
+    .title { font: 700 20px 'Helvetica Neue', Arial, sans-serif; fill: #0d47a1; }
+    .subtitle { font: 400 14px 'Helvetica Neue', Arial, sans-serif; fill: #263238; }
+    .box-title { font: 600 16px 'Helvetica Neue', Arial, sans-serif; fill: #1e88e5; }
+    .box-text { font: 400 13px 'Helvetica Neue', Arial, sans-serif; fill: #263238; }
+    .legend { font: 600 14px 'Helvetica Neue', Arial, sans-serif; fill: #5e35b1; }
+  </style>
+  <rect x="0" y="0" width="980" height="420" fill="#fafafa"/>
+  <text x="40" y="60" class="title">Roadmap general · Calendario Maya Mano Eléctrica Azul</text>
+  <text x="40" y="90" class="subtitle">Sprint 0 define la visión; los siguientes sprints entregan incrementos concretos.</text>
+
+  <!-- Row 1 -->
+  <rect x="40" y="120" width="200" height="110" rx="12" ry="12" fill="#e3f2fd" stroke="#1e88e5" stroke-width="2"/>
+  <text x="140" y="150" class="box-title" text-anchor="middle">Sprint 0</text>
+  <foreignObject x="55" y="160" width="170" height="60">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238; text-align:center;">
+      <p style="margin:0;">Visión &amp; roadmap. Artefactos Scrum listos.</p>
+    </body>
+  </foreignObject>
+
+  <rect x="260" y="120" width="200" height="110" rx="12" ry="12" fill="#e8f5e9" stroke="#43a047" stroke-width="2"/>
+  <text x="360" y="150" class="box-title" text-anchor="middle">Sprint 1</text>
+  <foreignObject x="275" y="160" width="170" height="60">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238; text-align:center;">
+      <p style="margin:0;">Setup Expo + tooling. Backlog inicial preparado.</p>
+    </body>
+  </foreignObject>
+
+  <rect x="480" y="120" width="200" height="110" rx="12" ry="12" fill="#ede7f6" stroke="#5e35b1" stroke-width="2"/>
+  <text x="580" y="150" class="box-title" text-anchor="middle">Sprint 2</text>
+  <foreignObject x="495" y="160" width="170" height="60">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238; text-align:center;">
+      <p style="margin:0;">MVP Kin Calculator y dataset de 260 kines.</p>
+    </body>
+  </foreignObject>
+
+  <rect x="700" y="120" width="200" height="110" rx="12" ry="12" fill="#fff3e0" stroke="#fb8c00" stroke-width="2"/>
+  <text x="800" y="150" class="box-title" text-anchor="middle">Sprint 3</text>
+  <foreignObject x="715" y="160" width="170" height="60">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238; text-align:center;">
+      <p style="margin:0;">UI/UX producción con release v1.0.1.</p>
+    </body>
+  </foreignObject>
+
+  <!-- Row 2 -->
+  <rect x="40" y="250" width="200" height="110" rx="12" ry="12" fill="#e3f2fd" stroke="#1e88e5" stroke-width="2"/>
+  <text x="140" y="280" class="box-title" text-anchor="middle">Sprint 4</text>
+  <foreignObject x="55" y="290" width="170" height="50">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238; text-align:center;">
+      <p style="margin:0;">Ondas encantadas completas.</p>
+    </body>
+  </foreignObject>
+
+  <rect x="260" y="250" width="200" height="110" rx="12" ry="12" fill="#e3f2fd" stroke="#1e88e5" stroke-width="2"/>
+  <text x="360" y="280" class="box-title" text-anchor="middle">Sprint 5</text>
+  <foreignObject x="275" y="290" width="170" height="50">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238; text-align:center;">
+      <p style="margin:0;">Favoritos y personalización.</p>
+    </body>
+  </foreignObject>
+
+  <rect x="480" y="250" width="200" height="110" rx="12" ry="12" fill="#e3f2fd" stroke="#1e88e5" stroke-width="2"/>
+  <text x="580" y="280" class="box-title" text-anchor="middle">Sprint 6</text>
+  <foreignObject x="495" y="290" width="170" height="50">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238; text-align:center;">
+      <p style="margin:0;">Notificaciones &amp; engagement.</p>
+    </body>
+  </foreignObject>
+
+  <rect x="700" y="250" width="200" height="110" rx="12" ry="12" fill="#e3f2fd" stroke="#1e88e5" stroke-width="2"/>
+  <text x="800" y="280" class="box-title" text-anchor="middle">Sprint 7</text>
+  <foreignObject x="715" y="290" width="170" height="50">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238; text-align:center;">
+      <p style="margin:0;">Compartición social.</p>
+    </body>
+  </foreignObject>
+
+  <text x="40" y="380" class="legend">Siguientes pasos técnicos: SQLite, búsqueda avanzada y analytics (Sprints 8-9-10).</text>
+</svg>
