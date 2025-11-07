@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520">
+  <style>
+    .title { font: 700 22px 'Helvetica Neue', Arial, sans-serif; fill: #0d47a1; }
+    .note { font: 400 14px 'Helvetica Neue', Arial, sans-serif; fill: #263238; }
+    .column-title { font: 600 18px 'Helvetica Neue', Arial, sans-serif; fill: #1e88e5; }
+    .card { font: 400 13px 'Helvetica Neue', Arial, sans-serif; fill: #263238; }
+  </style>
+  <rect x="0" y="0" width="960" height="520" fill="#fafafa"/>
+  <text x="40" y="60" class="title">Sprint 1 · Kanban de Setup Fundacional</text>
+  <text x="40" y="90" class="note">Vista inicial del tablero para arrancar el proyecto Expo.</text>
+
+  <!-- Columns -->
+  <g>
+    <rect x="40" y="120" width="260" height="340" rx="12" ry="12" fill="#e3f2fd" stroke="#1e88e5" stroke-width="2"/>
+    <text x="170" y="150" class="column-title" text-anchor="middle">To Do</text>
+    <foreignObject x="55" y="170" width="230" height="260">
+      <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238;">
+        <ul style="margin:0; padding-left:18px;">
+          <li>Inicializar proyecto Expo TS</li>
+          <li>Configurar ESLint + scripts</li>
+          <li>Estructurar carpetas base</li>
+          <li>Documentar setup local</li>
+          <li>Plantilla Kanban</li>
+          <li>Guía de contribución</li>
+        </ul>
+      </body>
+    </foreignObject>
+  </g>
+
+  <g>
+    <rect x="350" y="120" width="260" height="340" rx="12" ry="12" fill="#ede7f6" stroke="#5e35b1" stroke-width="2"/>
+    <text x="480" y="150" class="column-title" text-anchor="middle">Doing</text>
+    <foreignObject x="365" y="170" width="230" height="260">
+      <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238;">
+        <ul style="margin:0; padding-left:18px;">
+          <li>Configuración ESLint</li>
+          <li>Documentación setup</li>
+        </ul>
+      </body>
+    </foreignObject>
+  </g>
+
+  <g>
+    <rect x="660" y="120" width="260" height="340" rx="12" ry="12" fill="#e8f5e9" stroke="#43a047" stroke-width="2"/>
+    <text x="790" y="150" class="column-title" text-anchor="middle">Done</text>
+    <foreignObject x="675" y="170" width="230" height="260">
+      <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238;">
+        <ul style="margin:0; padding-left:18px;">
+          <li>Proyecto Expo creado</li>
+          <li>Estructura carpetas lista</li>
+        </ul>
+      </body>
+    </foreignObject>
+  </g>
+
+  <text x="40" y="480" class="note">Actualizado diariamente durante el sprint. Las tarjetas se movían de izquierda a derecha.</text>
+</svg>
