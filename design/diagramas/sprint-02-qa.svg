@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="320" viewBox="0 0 720 320">
+  <style>
+    .title { font: 700 20px 'Helvetica Neue', Arial, sans-serif; fill: #0d47a1; }
+    .section-title { font: 600 16px 'Helvetica Neue', Arial, sans-serif; fill: #1e88e5; }
+    .text { font: 400 13px 'Helvetica Neue', Arial, sans-serif; fill: #263238; }
+  </style>
+  <rect x="0" y="0" width="720" height="320" fill="#fafafa"/>
+  <text x="40" y="50" class="title">Resumen QA Sprint 2</text>
+
+  <rect x="40" y="80" width="280" height="200" rx="12" ry="12" fill="#e3f2fd" stroke="#1e88e5" stroke-width="2"/>
+  <text x="180" y="110" class="section-title" text-anchor="middle">Casos probados</text>
+  <foreignObject x="55" y="120" width="250" height="150">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238;">
+      <ul style="margin:0; padding-left:18px;">
+        <li>Kin 1 (Dragón) → fecha 2025-01-01</li>
+        <li>Kin 63 (base) → fecha 1910-01-01</li>
+        <li>Kin 260 (Sol Cósmico) → fecha 2035-05-19</li>
+        <li>Hunab Ku → 2024-02-29 (se excluye)</li>
+        <li>Rango negativo → 1800-01-01</li>
+      </ul>
+    </body>
+  </foreignObject>
+
+  <rect x="360" y="80" width="320" height="200" rx="12" ry="12" fill="#e8f5e9" stroke="#43a047" stroke-width="2"/>
+  <text x="520" y="110" class="section-title" text-anchor="middle">Resultados</text>
+  <foreignObject x="375" y="120" width="290" height="150">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238;">
+      <ul style="margin:0; padding-left:18px;">
+        <li>12 tests unitarios: todos en verde</li>
+        <li>Tiempo promedio cálculo: 4.6 ms</li>
+        <li>Dataset JSON validado: 260 entradas</li>
+        <li>Incidencias: 1 bug corregido (Hunab Ku)</li>
+      </ul>
+    </body>
+  </foreignObject>
+
+  <text x="40" y="280" class="text">Pruebas ejecutadas con Jest + utilidades manuales; ver documentación en `docs/reports/kines-dataset.md`.</text>
+</svg>

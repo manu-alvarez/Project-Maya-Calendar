@@ -1,0 +1,8 @@
+[
+  { "num": 1, "sello": "Dragón Magnético", "tono": "1", "mensaje": "Inicia el ciclo con energía de nacimiento y nutrición." },
+  { "num": 2, "sello": "Viento Lunar", "tono": "2", "mensaje": "Comunica con claridad tus intenciones." },
+  { "num": 3, "sello": "Noche Eléctrica", "tono": "3", "mensaje": "Relaciona tus sueños con acciones concretas." },
+  { "num": 63, "sello": "Mano Espectral", "tono": "11", "mensaje": "Libera lo que ya cumplió su propósito." },
+  { "num": 191, "sello": "Mono Solar", "tono": "9", "mensaje": "Brilla con alegría y espontaneidad." },
+  { "num": 260, "sello": "Sol Cósmico", "tono": "13", "mensaje": "Integra todo aprendizaje con luz y plenitud." }
+]
