@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="720" viewBox="0 0 360 720">
+  <defs>
+    <linearGradient id="headerGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d47a1" />
+      <stop offset="100%" stop-color="#fbc02d" />
+    </linearGradient>
+  </defs>
+  <rect width="360" height="720" fill="#f5f5f5"/>
+  <rect x="0" y="0" width="360" height="180" fill="url(#headerGradient)"/>
+  <text x="180" y="70" text-anchor="middle" font-family="'Helvetica Neue', Arial" font-size="24" font-weight="700" fill="#ffffff">Kin del día</text>
+  <text x="180" y="110" text-anchor="middle" font-family="'Helvetica Neue', Arial" font-size="16" fill="#ffffff">12 marzo 2025</text>
+
+  <rect x="90" y="200" width="180" height="180" rx="24" ry="24" fill="#ffffff" stroke="#1e88e5" stroke-width="2"/>
+  <text x="180" y="270" text-anchor="middle" font-family="'Helvetica Neue', Arial" font-size="48" fill="#1e88e5">63</text>
+
+  <text x="180" y="420" text-anchor="middle" font-family="'Helvetica Neue', Arial" font-size="18" font-weight="600" fill="#0d47a1">Mano Espectral · Tono 11</text>
+  <text x="180" y="460" text-anchor="middle" font-family="'Helvetica Neue', Arial" font-size="14" fill="#424242">"Libera lo que ya cumplió su propósito."</text>
+
+  <rect x="40" y="500" width="280" height="44" rx="12" ry="12" fill="#1e88e5"/>
+  <text x="180" y="528" text-anchor="middle" font-family="'Helvetica Neue', Arial" font-size="16" fill="#ffffff">Volver a hoy</text>
+
+  <text x="70" y="590" font-family="'Helvetica Neue', Arial" font-size="14" fill="#616161">Seleccionar fecha</text>
+  <rect x="70" y="600" width="220" height="44" rx="10" ry="10" fill="#ffffff" stroke="#cfd8dc" stroke-width="1"/>
+  <text x="180" y="628" text-anchor="middle" font-family="'Helvetica Neue', Arial" font-size="14" fill="#757575">YYYY-MM-DD</text>
+</svg>
