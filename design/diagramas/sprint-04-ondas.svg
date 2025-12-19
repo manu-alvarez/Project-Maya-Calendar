@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360">
+  <style>
+    .title { font: 700 22px 'Helvetica Neue', Arial, sans-serif; fill: #0d47a1; }
+    .subtitle { font: 400 14px 'Helvetica Neue', Arial, sans-serif; fill: #263238; }
+    .box-title { font: 600 16px 'Helvetica Neue', Arial, sans-serif; fill: #1e88e5; }
+    .box-text { font: 400 13px 'Helvetica Neue', Arial, sans-serif; fill: #263238; }
+  </style>
+  <rect width="960" height="360" fill="#fafafa"/>
+  <text x="40" y="60" class="title">Plan Sprint 4 · Ondas Encantadas</text>
+  <text x="40" y="90" class="subtitle">Modelo de datos y flujo de navegación pendiente de implementación.</text>
+
+  <rect x="40" y="120" width="260" height="180" rx="12" ry="12" fill="#e3f2fd" stroke="#1e88e5" stroke-width="2"/>
+  <text x="170" y="150" class="box-title" text-anchor="middle">Datos</text>
+  <foreignObject x="55" y="160" width="230" height="120">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238;">
+      <ul style="margin:0; padding-left:18px;">
+        <li>20 ondas (13 kines cada una)</li>
+        <li>Propósito y sello guía</li>
+        <li>Ciclo de 13 días</li>
+      </ul>
+    </body>
+  </foreignObject>
+
+  <rect x="340" y="120" width="260" height="180" rx="12" ry="12" fill="#ede7f6" stroke="#5e35b1" stroke-width="2"/>
+  <text x="470" y="150" class="box-title" text-anchor="middle">Integración</text>
+  <foreignObject x="355" y="160" width="230" height="120">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238;">
+      <ul style="margin:0; padding-left:18px;">
+        <li><code>kinFromDate</code> → onda</li>
+        <li>Indicador día actual</li>
+        <li>Resumen por onda</li>
+      </ul>
+    </body>
+  </foreignObject>
+
+  <rect x="640" y="120" width="260" height="180" rx="12" ry="12" fill="#e8f5e9" stroke="#43a047" stroke-width="2"/>
+  <text x="770" y="150" class="box-title" text-anchor="middle">UI</text>
+  <foreignObject x="655" y="160" width="230" height="120">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238;">
+      <ul style="margin:0; padding-left:18px;">
+        <li>Carrusel 13 días</li>
+        <li>Botones de navegación</li>
+        <li>Detalle por día</li>
+      </ul>
+    </body>
+  </foreignObject>
+
+  <text x="40" y="320" class="subtitle">Estado: pendiente · Riesgos: validación cultural y rendimiento.</text>
+</svg>
