@@ -2,7 +2,7 @@
   "expo": {
     "name": "Calendario Maya - Mano Electrica Azul",
     "slug": "calendario-maya-manoelectricaazul",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -13,11 +13,11 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "buildNumber": "3",
+      "buildNumber": "4",
       "supportsTablet": true
     },
     "android": {
-      "versionCode": 3,
+      "versionCode": 4,
       "permissions": [
         "INTERNET"
       ],
