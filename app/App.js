@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, ScrollView, TouchableOpacity, TextInput, ImageB
 import { useState, useMemo } from 'react';
 import { BlurView } from 'expo-blur';
 import reflexiones from './reflexiones_completas.json';
+import ondasDetalles from './src/utils/ondasEncantadasDetalles.json';
 import { kinFromDate } from './src/utils/kin';
 import { SELLO_NOMBRES, TONO_NOMBRES, SELLO_IMAGENES } from './src/utils/selloData';
 
@@ -42,7 +43,7 @@ export default function App() {
   const ondaEncantada = useMemo(() => {
     // Formula: Kin magnético = Kin actual - (Tono actual - 1)
     let magKin = kin.num - (kin.tono - 1);
-    
+
     // Ajuste circular: si magKin <= 0, sumamos 260
     // Ejemplo: Kin 2, Tono 3. 2 - (2) = 0 -> 260. (Sol Cósmico es anterior a Viento Lunar? No.)
     // Espera, Kin 2 (Viento Lunar). Tono 2.
@@ -51,7 +52,7 @@ export default function App() {
     // 1 - (1-1) = 1 - 0 = 1. Correcto.
     // Kin 260 (Sol Cósmico). Tono 13.
     // 260 - (13-1) = 260 - 12 = 248 (Estrella Magnética). Correcto.
-    
+
     // Qué pasa si Kin es 5, Tono 10? (Imposible matemáticamente en orden, pero...)
     // El tono siempre es (kin-1)%13 + 1.
     // Entonces kin = 13*m + k. Tono = k.
@@ -60,8 +61,8 @@ export default function App() {
     // La fórmula siempre da un número congruente con 1 mod 13?
     // (X - ( (X-1)%13 + 1 - 1 ) ) = X - (X-1)%13.
     // Si X = 14 (Mago). (14-1)%13 = 0. 14 - 0 = 14. Correcto.
-    
-    while (magKin <= 0) magKin += 260; 
+
+    while (magKin <= 0) magKin += 260;
 
     return {
       num: magKin,
@@ -138,34 +139,49 @@ export default function App() {
 
         {/* Sección Principal: Kin del Día */}
         <GlassContainer style={styles.mainCard}>
-            <Text style={styles.fechaTexto}>{formatearFechaLegible(fechaSeleccionada)}</Text>
-            
-            <View style={styles.kinHeader}>
-              <Image
-                source={{ uri: SELLO_IMAGENES[kin.sello] }}
-                style={styles.selloImagen}
-                resizeMode="contain"
-              />
-              <View>
-                <Text style={styles.kinNumero}>Kin {kin.num}</Text>
-                <Text style={styles.kinNombre}>{SELLO_NOMBRES[kin.sello]}</Text>
-                <Text style={styles.kinTono}>{TONO_NOMBRES[kin.tono]}</Text>
-              </View>
-            </View>
+          <Text style={styles.fechaTexto}>{formatearFechaLegible(fechaSeleccionada)}</Text>
 
-            <View style={styles.divider} />
-            <Text style={styles.reflexionTitulo}>Esencia del Kin</Text>
-            <Text style={styles.reflexionTexto}>{reflexionKin.split('\n')[0]}</Text>
+          <View style={styles.kinHeader}>
+            <Image
+              source={{ uri: SELLO_IMAGENES[kin.sello] }}
+              style={styles.selloImagen}
+              resizeMode="contain"
+            />
+            <View>
+              <Text style={styles.kinNumero}>Kin {kin.num}</Text>
+              <Text style={styles.kinNombre}>{SELLO_NOMBRES[kin.sello]}</Text>
+              <Text style={styles.kinTono}>{TONO_NOMBRES[kin.tono]}</Text>
+            </View>
+          </View>
+
+          <View style={styles.divider} />
+          <Text style={styles.reflexionTitulo}>Esencia del Kin</Text>
+          <Text style={styles.reflexionTexto}>{reflexionKin}</Text>
         </GlassContainer>
 
         {/* Sección Onda Encantada */}
         <GlassContainer style={styles.ondaCard}>
           <Text style={styles.ondaTitulo}>Onda Encantada del {ondaEncantada.nombreSello}</Text>
-          <Text style={styles.ondaSubtitulo}>Propósito y Energía (Kin {ondaEncantada.num})</Text>
-          <Text style={styles.ondaTexto}>
-            {/* Mostramos una parte significativa del texto, evitando que sea demasiado largo si es la misma que la reflexión del dia */}
-            {reflexionOnda}
-          </Text>
+          <Text style={styles.ondaSubtitulo}>Día {kin.tono} de 13: {SELLO_NOMBRES[kin.sello]} {TONO_NOMBRES[kin.tono]}</Text>
+
+          {ondasDetalles[kin.num] ? (
+            <View style={styles.detallesContainer}>
+              <View style={styles.detalleItem}>
+                <Text style={styles.detalleLabel}>✨ Luz:</Text>
+                <Text style={styles.detalleTexto}>{ondasDetalles[kin.num].luz}</Text>
+              </View>
+              <View style={styles.detalleItem}>
+                <Text style={styles.detalleLabel}>🌑 Sombra:</Text>
+                <Text style={styles.detalleTexto}>{ondasDetalles[kin.num].sombra}</Text>
+              </View>
+              <View style={styles.detalleItem}>
+                <Text style={styles.detalleLabel}>💡 Consejo:</Text>
+                <Text style={styles.detalleTexto}>{ondasDetalles[kin.num].consejo}</Text>
+              </View>
+            </View>
+          ) : (
+            <Text style={styles.ondaTexto}>{reflexionOnda}</Text>
+          )}
         </GlassContainer>
 
         {/* Controles de Navegación */}
@@ -318,7 +334,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     lineHeight: 22,
   },
-  
+
   // Card Onda Encantada
   ondaCard: {
     // Estilos extra si se requieren
@@ -342,6 +358,25 @@ const styles = StyleSheet.create({
     color: 'rgba(255,255,255,0.9)',
     lineHeight: 22,
     textAlign: 'justify',
+  },
+  detallesContainer: {
+    marginTop: 10,
+    width: '100%',
+  },
+  detalleItem: {
+    marginBottom: 12,
+  },
+  detalleLabel: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#FFD700', // Gold for labels
+    marginBottom: 4,
+  },
+  detalleTexto: {
+    fontSize: 15,
+    color: '#fff',
+    lineHeight: 22,
+    textAlign: 'justify', // Justified text for cleaner look
   },
 
   // Navegación

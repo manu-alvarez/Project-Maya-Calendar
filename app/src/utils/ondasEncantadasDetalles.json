@@ -1,0 +1,1302 @@
+{
+  "1": {
+    "luz": "Iniciar proyectos",
+    "sombra": "Sentirse no apoyado",
+    "consejo": "Confía en que la vida te nutre"
+  },
+  "2": {
+    "luz": "Comunicación clara",
+    "sombra": "Hablar en exceso sin sentido",
+    "consejo": "Escucha tu espíritu antes de hablar"
+  },
+  "3": {
+    "luz": "Abundancia de ideas",
+    "sombra": "Miedo a la carencia",
+    "consejo": "Sueña con soluciones para otros"
+  },
+  "4": {
+    "luz": "Potencial enfocado",
+    "sombra": "Inseguridad",
+    "consejo": "Ordena tus prioridades para florecer"
+  },
+  "5": {
+    "luz": "Vitalidad física",
+    "sombra": "Agotamiento o lujuria",
+    "consejo": "Escucha los instintos de tu cuerpo"
+  },
+  "6": {
+    "luz": "Soltar lo viejo",
+    "sombra": "Resistencia al cierre",
+    "consejo": "Perdona para equilibrar tu energía"
+  },
+  "7": {
+    "luz": "Sanación a través del hacer",
+    "sombra": "Dejar cosas a medias",
+    "consejo": "Concluye tus tareas pendientes"
+  },
+  "8": {
+    "luz": "Belleza y arte",
+    "sombra": "Autocrítica severa",
+    "consejo": "Haz de tu vida una obra de arte coherente"
+  },
+  "9": {
+    "luz": "Flujo emocional",
+    "sombra": "Represión",
+    "consejo": "Purifica tus emociones con honestidad"
+  },
+  "10": {
+    "luz": "Amor incondicional",
+    "sombra": "Celos o lealtad ciega",
+    "consejo": "Manifiesta lealtad hacia ti mismo primero"
+  },
+  "11": {
+    "luz": "Humor y juego",
+    "sombra": "Tomarse todo muy en serio",
+    "consejo": "Suelta la rigidez riéndote de tus errores"
+  },
+  "12": {
+    "luz": "Libre albedrío",
+    "sombra": "Influenciable",
+    "consejo": "Coopera desde tu propia sabiduría interna"
+  },
+  "13": {
+    "luz": "Exploración espiritual",
+    "sombra": "Aislamiento",
+    "consejo": "Sé un canal entre el cielo y la tierra"
+  },
+  "14": {
+    "luz": "Habitar el \"aquí y ahora\" siendo la propia magia",
+    "sombra": "Impaciencia espiritual o deseo de control",
+    "consejo": "Siembra la intención de vivir sin prisa"
+  },
+  "15": {
+    "luz": "Elevarse sobre los conflictos con visión superior",
+    "sombra": "Perderse en detalles minuciosos o tensiones materiales",
+    "consejo": "Observa tus relaciones con perspectiva global y sin juzgar"
+  },
+  "16": {
+    "luz": "Activar la valentía para cuestionar dogmas establecidos",
+    "sombra": "Agresividad o lucha innecesaria",
+    "consejo": "Sé intrépido al proponer nuevas formas de hacer las cosas en tus vínculos"
+  },
+  "17": {
+    "luz": "Sintonizar con la sincronicidad y el ritmo natural",
+    "sombra": "Terquedad o resistencia al cambio",
+    "consejo": "No fuerces nada; espera el momento adecuado"
+  },
+  "18": {
+    "luz": "Buscar la verdad sin filtros ni espejismos",
+    "sombra": "Juicios severos o ilusiones del ego",
+    "consejo": "Mantén un orden mental basado en tus propias convicciones"
+  },
+  "19": {
+    "luz": "Aprovechar la capacidad de autogeneración energética",
+    "sombra": "Caos emocional o desconexión corporal",
+    "consejo": "Transforma cualquier crisis en una oportunidad de renovación interna"
+  },
+  "20": {
+    "luz": "Actuar desde el amor universal e irradiar calor",
+    "sombra": "Soberbia espiritual o egocentrismo",
+    "consejo": "Inspira a los demás siendo tú mismo la luz"
+  },
+  "21": {
+    "luz": "Nutrir el ser y los nuevos comienzos",
+    "sombra": "Falta de confianza o descuido personal",
+    "consejo": "Trata cada momento como si fuera la primera vez"
+  },
+  "22": {
+    "luz": "Uso de la palabra sagrada y coherente",
+    "sombra": "Comunicación manipuladora o deshonesta",
+    "consejo": "Formaliza tus intenciones con un lenguaje honesto y transparente"
+  },
+  "23": {
+    "luz": "Escuchar la intuición profunda del misterio",
+    "sombra": "Miedo al vacío o exceso de pragmatismo",
+    "consejo": "\"Sueña la realidad\" y ábrete a la abundancia interna"
+  },
+  "24": {
+    "luz": "Permitir el florecimiento compartiendo dones",
+    "sombra": "Aferrarse a la \"cáscara\" por miedo",
+    "consejo": "Rompe tus límites y estructuras rígidas para crecer"
+  },
+  "25": {
+    "luz": "Conectar con la vitalidad corporal y el instinto",
+    "sombra": "Agotamiento físico o impulsos sin conciencia",
+    "consejo": "Usa tu entusiasmo para materializar deseos colectivos"
+  },
+  "26": {
+    "luz": "Practicar el desapego total y el renacimiento",
+    "sombra": "Resistencia al cierre de ciclos",
+    "consejo": "Suelta lo que ya no sirve para poder cerrar el ciclo"
+  },
+  "27": {
+    "luz": "Realización",
+    "sombra": "Procrastinación",
+    "consejo": "Enfócate en concretar tus metas"
+  },
+  "28": {
+    "luz": "Armonía estética",
+    "sombra": "Caos o drama",
+    "consejo": "Encuentra la belleza en el conflicto"
+  },
+  "29": {
+    "luz": "Sensibilidad sanadora",
+    "sombra": "Inestabilidad",
+    "consejo": "Usa tus emociones para ayudar a otros"
+  },
+  "30": {
+    "luz": "Compañerismo",
+    "sombra": "Dependencia emocional",
+    "consejo": "Estructura tu servicio desde el amor"
+  },
+  "31": {
+    "luz": "Magia e ilusión",
+    "sombra": "Sarcasmo hiriente",
+    "consejo": "Recupera tu poder a través de la alegría"
+  },
+  "32": {
+    "luz": "Sabiduría práctica",
+    "sombra": "Indecisión",
+    "consejo": "Equilibra tus deseos con tu responsabilidad"
+  },
+  "33": {
+    "luz": "Mensajero",
+    "sombra": "Desconexión de la realidad",
+    "consejo": "Inspira a otros explorando nuevos caminos"
+  },
+  "34": {
+    "luz": "Humildad",
+    "sombra": "Miedo a la muerte/cambio",
+    "consejo": "Vive con integridad soltando el control"
+  },
+  "35": {
+    "luz": "Transformación",
+    "sombra": "Autodestrucción",
+    "consejo": "Dirige tu energía hacia el cambio positivo"
+  },
+  "36": {
+    "luz": "Iluminación",
+    "sombra": "Ego desmedido",
+    "consejo": "Brilla para todos sin distinciones"
+  },
+  "37": {
+    "luz": "Memoria del ser",
+    "sombra": "Falta de confianza",
+    "consejo": "Libérate nutriendo tu esencia más pura"
+  },
+  "38": {
+    "luz": "Comunicación sagrada",
+    "sombra": "Secretismo",
+    "consejo": "Comparte tu verdad con el grupo"
+  },
+  "39": {
+    "luz": "Intuición final",
+    "sombra": "Depresión",
+    "consejo": "Transciende habitando la abundancia del misterio"
+  },
+  "40": {
+    "luz": "Amor incondicional",
+    "sombra": "Juicio moral",
+    "consejo": "Acepta a todos tal como son"
+  },
+  "41": {
+    "luz": "Inicio consciente",
+    "sombra": "Pereza",
+    "consejo": "Aprende a recibir apoyo para brillar"
+  },
+  "42": {
+    "luz": "Aliento de vida",
+    "sombra": "Chismes",
+    "consejo": "Usa tu palabra para animar a los demás"
+  },
+  "43": {
+    "luz": "Intuición productiva",
+    "sombra": "Fantasía excesiva",
+    "consejo": "Dale forma a tus sueños más profundos"
+  },
+  "44": {
+    "luz": "Autoconfianza",
+    "sombra": "Miedo al fracaso",
+    "consejo": "Planta hoy lo que deseas cosechar"
+  },
+  "45": {
+    "luz": "Pasión controlada",
+    "sombra": "Desenfreno",
+    "consejo": "Encuentra el equilibrio en el goce físico"
+  },
+  "46": {
+    "luz": "Entrega absoluta",
+    "sombra": "Aferrarse al pasado",
+    "consejo": "Suelta las cargas para resonar con la luz"
+  },
+  "47": {
+    "luz": "Conocimiento",
+    "sombra": "Negación",
+    "consejo": "Sé íntegro terminando lo que es saludable para ti"
+  },
+  "48": {
+    "luz": "Elegancia",
+    "sombra": "Vanidad",
+    "consejo": "Intenciona belleza en cada uno de tus actos"
+  },
+  "49": {
+    "luz": "Purificación",
+    "sombra": "Toxicidad emocional",
+    "consejo": "Manifiesta limpieza en tu entorno"
+  },
+  "50": {
+    "luz": "Fidelidad al espíritu",
+    "sombra": "Odio",
+    "consejo": "Libérate de resentimientos antiguos"
+  },
+  "51": {
+    "luz": "Transparencia",
+    "sombra": "Engaño",
+    "consejo": "Coopera jugando, sin agendas ocultas"
+  },
+  "52": {
+    "luz": "Sabiduría divina",
+    "sombra": "Arrogancia intelectual",
+    "consejo": "Transciende eligiendo siempre desde el corazón"
+  },
+  "53": {
+    "luz": "Exploración y vigilancia",
+    "sombra": "Aislamiento o miedo a lo desconocido",
+    "consejo": "Atrévete a salir de tu zona de confort"
+  },
+  "54": {
+    "luz": "Receptividad en el camino",
+    "sombra": "Querer controlar el destino",
+    "consejo": "Mantente presente mientras exploras"
+  },
+  "55": {
+    "luz": "Visión amplia para ayudar",
+    "sombra": "Perderse en metas lejanas",
+    "consejo": "Observa el panorama completo antes de actuar"
+  },
+  "56": {
+    "luz": "Cuestionamiento inteligente",
+    "sombra": "Lucha interna",
+    "consejo": "Estructura tu camino con preguntas valientes"
+  },
+  "57": {
+    "luz": "Sincronicidad evolutiva",
+    "sombra": "Desorientación",
+    "consejo": "Escucha las señales de la naturaleza para guiarte"
+  },
+  "58": {
+    "luz": "Reflejo de la verdad",
+    "sombra": "Negación de la realidad",
+    "consejo": "Mira tu entorno como un espejo de tu equilibrio interno"
+  },
+  "59": {
+    "luz": "Transformación energética",
+    "sombra": "Caos",
+    "consejo": "Mantente en el centro de la tormenta para no perder el eje"
+  },
+  "60": {
+    "luz": "Iluminación coherente",
+    "sombra": "Ego",
+    "consejo": "Vive de acuerdo con la luz que predicas"
+  },
+  "61": {
+    "luz": "Nutrir el inicio",
+    "sombra": "Falta de confianza",
+    "consejo": "Pon la intención de cuidar tus proyectos nacientes"
+  },
+  "62": {
+    "luz": "Comunicación del espíritu",
+    "sombra": "Mentiras",
+    "consejo": "Manifiesta tu verdad a través de la palabra"
+  },
+  "63": {
+    "luz": "Intuición liberada",
+    "sombra": "Miedo a la carencia",
+    "consejo": "Suelta las estructuras que limitan tus sueños"
+  },
+  "64": {
+    "luz": "Florecimiento grupal",
+    "sombra": "Rigidez",
+    "consejo": "Comparte tus dones para que otros también crezcan"
+  },
+  "65": {
+    "luz": "Vitalidad y pasión",
+    "sombra": "Apego material",
+    "consejo": "Transciende integrando tu instinto con tu espíritu"
+  },
+  "66": {
+    "luz": "Oportunidad y desapego",
+    "sombra": "Miedo a la muerte o al final",
+    "consejo": "Suelta lo que ya no sirve"
+  },
+  "67": {
+    "luz": "Sanación práctica",
+    "sombra": "Dejar cosas inconclusas",
+    "consejo": "El reto es terminar lo que empezaste para poder cerrar ciclos"
+  },
+  "68": {
+    "luz": "Embellecer el entorno",
+    "sombra": "Crítica",
+    "consejo": "Sirve a los demás creando armonía"
+  },
+  "69": {
+    "luz": "Purificación emocional",
+    "sombra": "Desborde",
+    "consejo": "Dale forma a tus sentimientos de manera saludable"
+  },
+  "70": {
+    "luz": "Lealtad y amor",
+    "sombra": "Apego emocional",
+    "consejo": "Recupera tu poder amándote incondicionalmente"
+  },
+  "71": {
+    "luz": "Juego y humor",
+    "sombra": "Sarcasmo",
+    "consejo": "Encuentra el equilibrio riéndote de las situaciones difíciles"
+  },
+  "72": {
+    "luz": "Libre albedrío",
+    "sombra": "Indecisión",
+    "consejo": "Elige con sabiduría para mantener tu centro"
+  },
+  "73": {
+    "luz": "Exploración coherente",
+    "sombra": "Distracción",
+    "consejo": "Sé íntegro en tu búsqueda espiritual"
+  },
+  "74": {
+    "luz": "Presencia intencionada",
+    "sombra": "Manipulación",
+    "consejo": "Enfoca tu energía en el presente absoluto"
+  },
+  "75": {
+    "luz": "Visión clara",
+    "sombra": "Falsas esperanzas",
+    "consejo": "Manifiesta tus proyectos desde una perspectiva elevada"
+  },
+  "76": {
+    "luz": "Soltar miedos",
+    "sombra": "Cobardía",
+    "consejo": "Libérate de los dogmas que te encadenan"
+  },
+  "77": {
+    "luz": "Evolución colectiva",
+    "sombra": "Terquedad",
+    "consejo": "Coopera con el ritmo natural del planeta"
+  },
+  "78": {
+    "luz": "Orden infinito",
+    "sombra": "Confusión",
+    "consejo": "Transciende reconociendo el orden divino en todo"
+  },
+  "79": {
+    "luz": "Autogeneración de energía",
+    "sombra": "Crisis descontrolada",
+    "consejo": "Usa la crisis para renovarte"
+  },
+  "80": {
+    "luz": "Amor universal ante el caos",
+    "sombra": "Juicio",
+    "consejo": "Mantén tu luz encendida incluso en la tempestad"
+  },
+  "81": {
+    "luz": "Nutrir el cambio",
+    "sombra": "Abandono",
+    "consejo": "Cuida de ti mismo mientras sirves a la transformación de otros"
+  },
+  "82": {
+    "luz": "Comunicación clara",
+    "sombra": "Silencio represivo",
+    "consejo": "Pon palabras a la transformación que vives"
+  },
+  "83": {
+    "luz": "Abundancia intuitiva",
+    "sombra": "Oscuridad mental",
+    "consejo": "Confía en tus sueños para recuperar tu poder"
+  },
+  "84": {
+    "luz": "Florecimiento ordenado",
+    "sombra": "Impaciencia",
+    "consejo": "Equilibra tu crecimiento sin forzar la cáscara"
+  },
+  "85": {
+    "luz": "Vitalidad corporal",
+    "sombra": "Agotamiento",
+    "consejo": "Escucha a tu cuerpo para mantener la resonancia"
+  },
+  "86": {
+    "luz": "Soltar con honor",
+    "sombra": "Aferrarse",
+    "consejo": "Sé íntegro cerrando lo que ya terminó"
+  },
+  "87": {
+    "luz": "Sanación enfocada",
+    "sombra": "Procrastinar",
+    "consejo": "Pon la intención de concluir tus proyectos de sanación"
+  },
+  "88": {
+    "luz": "Arte y belleza",
+    "sombra": "Drama",
+    "consejo": "Manifiesta armonía en medio del cambio"
+  },
+  "89": {
+    "luz": "Limpieza emocional",
+    "sombra": "Toxicidad",
+    "consejo": "Libérate de las emociones que te estancan"
+  },
+  "90": {
+    "luz": "Amor cooperativo",
+    "sombra": "Infidelidad",
+    "consejo": "Coopera con los demás desde la lealtad"
+  },
+  "91": {
+    "luz": "Magia juguetona",
+    "sombra": "Seriedad extrema",
+    "consejo": "Transciende la tormenta con una sonrisa"
+  },
+  "92": {
+    "luz": "Libre albedrío y sabiduría",
+    "sombra": "Sentirse víctima",
+    "consejo": "Hazte cargo de tus decisiones"
+  },
+  "93": {
+    "luz": "Explorar límites",
+    "sombra": "Desconexión",
+    "consejo": "El reto es bajar tus ideas a la realidad cotidiana"
+  },
+  "94": {
+    "luz": "Encantar a otros",
+    "sombra": "Orgullo",
+    "consejo": "Sirve estando plenamente presente para los demás"
+  },
+  "95": {
+    "luz": "Estructura visionaria",
+    "sombra": "Obsesión por el detalle",
+    "consejo": "Dale forma a tu vida con visión de futuro"
+  },
+  "96": {
+    "luz": "Inteligencia y audacia",
+    "sombra": "Agresión",
+    "consejo": "Recupera tu poder cuestionando lo establecido"
+  },
+  "97": {
+    "luz": "Navegar la sincronía",
+    "sombra": "Terquedad",
+    "consejo": "Equilibra tus pasos con el ritmo de la vida"
+  },
+  "98": {
+    "luz": "Claridad mental",
+    "sombra": "Engaño",
+    "consejo": "Sé un canal de verdad para quienes te rodean"
+  },
+  "99": {
+    "luz": "Autogeneración coherente",
+    "sombra": "Destrucción",
+    "consejo": "Transfórmate sin perder tu integridad"
+  },
+  "100": {
+    "luz": "Amor universal",
+    "sombra": "Ego",
+    "consejo": "Pon la intención de irradiar calor a todos por igual"
+  },
+  "101": {
+    "luz": "Nutrir la realidad",
+    "sombra": "Falta de sustento",
+    "consejo": "Manifiesta el cuidado de lo básico en tu vida"
+  },
+  "102": {
+    "luz": "Soltar la palabra",
+    "sombra": "Incomunicación",
+    "consejo": "Libérate de los secretos que te pesan"
+  },
+  "103": {
+    "luz": "Compartir sueños",
+    "sombra": "Aislamiento",
+    "consejo": "Coopera compartiendo tu visión interna con el grupo"
+  },
+  "104": {
+    "luz": "Florecimiento final",
+    "sombra": "Miedo a ser visto",
+    "consejo": "Transciende permitiendo que tu potencial se manifieste plenamente"
+  },
+  "105": {
+    "luz": "Instinto de supervivencia y pasión",
+    "sombra": "Agotamiento extremo o estrés",
+    "consejo": "Escucha los deseos genuinos de tu cuerpo"
+  },
+  "106": {
+    "luz": "Soltar el control para sanar",
+    "sombra": "Aferrarse a lo viejo",
+    "consejo": "El reto es dejar morir lo que te quita energía"
+  },
+  "107": {
+    "luz": "Sanación física a través del hacer",
+    "sombra": "Procrastinación",
+    "consejo": "Sirve a otros concretando acciones de bienestar"
+  },
+  "108": {
+    "luz": "Belleza en el movimiento",
+    "sombra": "Autocrítica",
+    "consejo": "Dale una forma armoniosa y elegante a tu rutina diaria"
+  },
+  "109": {
+    "luz": "Flujo emocional constante",
+    "sombra": "Inestabilidad",
+    "consejo": "Recupera tu poder purificando tus aguas internas"
+  },
+  "110": {
+    "luz": "Amor propio incondicional",
+    "sombra": "Dependencia",
+    "consejo": "Equilibra tus instintos con la lealtad hacia ti mismo"
+  },
+  "111": {
+    "luz": "Juego y magia espontánea",
+    "sombra": "Sarcasmo",
+    "consejo": "Mantén el eje recuperando la alegría de vivir"
+  },
+  "112": {
+    "luz": "Sabiduría en la elección",
+    "sombra": "Indecisión",
+    "consejo": "Sé íntegro viviendo de acuerdo con tu libre albedrío"
+  },
+  "113": {
+    "luz": "Exploración de nuevos espacios",
+    "sombra": "Aislamiento",
+    "consejo": "Intenciona expandir tus límites físicos y mentales"
+  },
+  "114": {
+    "luz": "Presencia absoluta en el ahora",
+    "sombra": "Manipulación",
+    "consejo": "Manifiesta tu fuerza vital habitando el \"eterno presente\""
+  },
+  "115": {
+    "luz": "Visión panorámica liberadora",
+    "sombra": "Obsesión",
+    "consejo": "Libérate de cargas observando tu vida desde lo alto"
+  },
+  "116": {
+    "luz": "Inteligencia colectiva",
+    "sombra": "Conflicto",
+    "consejo": "Coopera cuestionando con valentía los dogmas del grupo"
+  },
+  "117": {
+    "luz": "Sincronicidad total con el planeta",
+    "sombra": "Desorientación",
+    "consejo": "Transciende fluyendo con el ritmo orgánico de la vida"
+  },
+  "118": {
+    "luz": "Claridad y discernimiento",
+    "sombra": "Juicio severo",
+    "consejo": "Mira la realidad sin filtros ni máscaras"
+  },
+  "119": {
+    "luz": "Autogeneración ante el caos",
+    "sombra": "Crisis emocional",
+    "consejo": "El reto es mantener la calma en medio de la transformación"
+  },
+  "120": {
+    "luz": "Amor universal iluminador",
+    "sombra": "Ego",
+    "consejo": "Sirve siendo una fuente de calidez para los demás"
+  },
+  "121": {
+    "luz": "Nutrir el ser desde la base",
+    "sombra": "Falta de confianza",
+    "consejo": "Estructura tu vida cuidando tus necesidades básicas"
+  },
+  "122": {
+    "luz": "Comunicación del espíritu",
+    "sombra": "Mentiras",
+    "consejo": "Recupera tu poder a través de la palabra honesta"
+  },
+  "123": {
+    "luz": "Intuición y abundancia",
+    "sombra": "Miedo al vacío",
+    "consejo": "Equilibra tu mundo interno escuchando tus sueños"
+  },
+  "124": {
+    "luz": "Conciencia del potencial",
+    "sombra": "Rigidez",
+    "consejo": "Resuena con tu propia capacidad de florecer"
+  },
+  "125": {
+    "luz": "Vitalidad coherente",
+    "sombra": "Agotamiento",
+    "consejo": "Sé íntegro respetando los ritmos de tu cuerpo"
+  },
+  "126": {
+    "luz": "Soltar con propósito",
+    "sombra": "Aferramiento",
+    "consejo": "Pon la intención de cerrar ciclos definitivamente"
+  },
+  "127": {
+    "luz": "Sanación manifiesta",
+    "sombra": "Procrastinar",
+    "consejo": "Manifiesta tu bienestar terminando lo que es saludable para ti"
+  },
+  "128": {
+    "luz": "Armonía y belleza artística",
+    "sombra": "Caos",
+    "consejo": "Libérate de la fealdad interna creando arte"
+  },
+  "129": {
+    "luz": "Purificación emocional grupal",
+    "sombra": "Hipersensibilidad",
+    "consejo": "Coopera fluyendo con los sentimientos de los demás"
+  },
+  "130": {
+    "luz": "Amor incondicional trascendente",
+    "sombra": "Odio",
+    "consejo": "Transciende amando cada reflejo que la vida te muestra"
+  },
+  "131": {
+    "luz": "Juego, humor y magia",
+    "sombra": "Tomarse todo demasiado en serio",
+    "consejo": "Rompe la rigidez con una sonrisa"
+  },
+  "132": {
+    "luz": "Sabiduría ante la dualidad",
+    "sombra": "Indecisión",
+    "consejo": "El reto es elegir el camino que te dé más alegría"
+  },
+  "133": {
+    "luz": "Exploración aventurera",
+    "sombra": "Desconexión",
+    "consejo": "Sirve explorando nuevas formas de divertirte"
+  },
+  "134": {
+    "luz": "Receptividad presente",
+    "sombra": "Control",
+    "consejo": "Dale forma a tu magia habitando el \"aquí y ahora\""
+  },
+  "135": {
+    "luz": "Visión elevada",
+    "sombra": "Perderse en detalles",
+    "consejo": "Recupera tu poder mirando el juego desde afuera"
+  },
+  "136": {
+    "luz": "Inteligencia estratégica",
+    "sombra": "Lucha",
+    "consejo": "Equilibra tu ser cuestionando los miedos que te impiden jugar"
+  },
+  "137": {
+    "luz": "Navegar la sincronía",
+    "sombra": "Terquedad",
+    "consejo": "Sigue las señales divertidas que la vida te pone en el camino"
+  },
+  "138": {
+    "luz": "Reflejo de la verdad",
+    "sombra": "Ilusión",
+    "consejo": "Sé íntegro reconociendo que la realidad es un juego de espejos"
+  },
+  "139": {
+    "luz": "Transformación energética",
+    "sombra": "Caos",
+    "consejo": "Intenciona renovarte a través del juego y el movimiento"
+  },
+  "140": {
+    "luz": "Brillar con amor",
+    "sombra": "Ego",
+    "consejo": "Manifiesta tu luz sin miedo a parecer ridículo"
+  },
+  "141": {
+    "luz": "Nutrir el inicio",
+    "sombra": "Desconfianza",
+    "consejo": "Libérate de prejuicios cuidando tu inocencia original"
+  },
+  "142": {
+    "luz": "Comunicación juguetona",
+    "sombra": "Chisme",
+    "consejo": "Coopera compartiendo mensajes que alegren a otros"
+  },
+  "143": {
+    "luz": "Abundancia intuitiva final",
+    "sombra": "Oscuridad",
+    "consejo": "Transciende soñando una realidad mágica"
+  },
+  "144": {
+    "luz": "Conciencia y florecimiento",
+    "sombra": "Inseguridad o estancamiento",
+    "consejo": "Planta hoy las metas que quieres ver crecer"
+  },
+  "145": {
+    "luz": "Vitalidad instintiva",
+    "sombra": "Agotamiento",
+    "consejo": "El reto es mantener la energía física mientras creces"
+  },
+  "146": {
+    "luz": "Soltar para ayudar",
+    "sombra": "Aferramiento",
+    "consejo": "Sirve ayudando a otros a dejar ir lo que les impide florecer"
+  },
+  "147": {
+    "luz": "Concreción y sanación",
+    "sombra": "Dejar cosas a medias",
+    "consejo": "Dale forma a tu propósito terminando tus tareas pendientes"
+  },
+  "148": {
+    "luz": "Arte y armonía",
+    "sombra": "Crítica",
+    "consejo": "Recupera tu poder embelleciendo tu entorno"
+  },
+  "149": {
+    "luz": "Fluidez emocional",
+    "sombra": "Inestabilidad",
+    "consejo": "Equilibra tu crecimiento purificando tus sentimientos"
+  },
+  "150": {
+    "luz": "Lealtad y amor",
+    "sombra": "Celos",
+    "consejo": "Mantén el eje amándote incondicionalmente durante el proceso"
+  },
+  "151": {
+    "luz": "Magia coherente",
+    "sombra": "Sarcasmo",
+    "consejo": "Sé íntegro sin perder el sentido del humor"
+  },
+  "152": {
+    "luz": "Sabiduría libre",
+    "sombra": "Influenciable",
+    "consejo": "Pon la intención de elegir desde tu propia verdad interna"
+  },
+  "153": {
+    "luz": "Exploración manifiesta",
+    "sombra": "Aislamiento",
+    "consejo": "Manifiesta tu crecimiento explorando nuevos horizontes"
+  },
+  "154": {
+    "luz": "Habitar el presente liberado",
+    "sombra": "Control",
+    "consejo": "Libérate de la prisa y habita el \"eterno presente\""
+  },
+  "155": {
+    "luz": "Visión colectiva compartida",
+    "sombra": "Obsesión",
+    "consejo": "Coopera aportando una visión clara al grupo"
+  },
+  "156": {
+    "luz": "Inteligencia espiritual trascendente",
+    "sombra": "Miedo",
+    "consejo": "Transciende cuestionando cualquier límite que impida tu expansión"
+  },
+  "157": {
+    "luz": "Sintoniza con la sincronicidad",
+    "sombra": "Terquedad",
+    "consejo": "No fuerces las cosas; espera el momento adecuado"
+  },
+  "158": {
+    "luz": "Ver la verdad sin filtros",
+    "sombra": "Juicio severo",
+    "consejo": "Distingue la realidad de la ilusión del ego"
+  },
+  "159": {
+    "luz": "Autogeneración y renovación",
+    "sombra": "Caos emocional",
+    "consejo": "Sirve transformando crisis en oportunidades"
+  },
+  "160": {
+    "luz": "Actuar desde el amor universal",
+    "sombra": "Soberbia",
+    "consejo": "Da forma a tu vida siendo luz para los demás"
+  },
+  "161": {
+    "luz": "Nutrir el ser",
+    "sombra": "Falta de confianza",
+    "consejo": "Trata cada momento como si fuera la primera vez"
+  },
+  "162": {
+    "luz": "Palabra sagrada y honesta",
+    "sombra": "Comunicación manipuladora",
+    "consejo": "Sé coherente entre lo que sientes y dices"
+  },
+  "163": {
+    "luz": "Intuición profunda",
+    "sombra": "Miedo al vacío",
+    "consejo": "Mantén tu eje escuchando tus sueños"
+  },
+  "164": {
+    "luz": "Florecimiento",
+    "sombra": "Aferrarse a la \"cáscara\"",
+    "consejo": "Permitir que tus dones se compartan"
+  },
+  "165": {
+    "luz": "Vitalidad corporal",
+    "sombra": "Agotamiento físico",
+    "consejo": "Intenciona recuperar tu fuerza vital"
+  },
+  "166": {
+    "luz": "Desapego y cierre",
+    "sombra": "Resistencia al cierre",
+    "consejo": "Manifiesta tu libertad soltando lo que ya no sirve"
+  },
+  "167": {
+    "luz": "Sanación y realización",
+    "sombra": "Procrastinación",
+    "consejo": "Libérate concluyendo aquello pendiente"
+  },
+  "168": {
+    "luz": "Arte y armonía",
+    "sombra": "Crítica excesiva",
+    "consejo": "Coopera embelleciendo el entorno común"
+  },
+  "169": {
+    "luz": "Flujo emocional final",
+    "sombra": "Represión",
+    "consejo": "Permite que tus emociones fluyan de manera orgánica"
+  },
+  "170": {
+    "luz": "Amor incondicional",
+    "sombra": "Celos",
+    "consejo": "Siembra la intención de ser fiel a ti mismo"
+  },
+  "171": {
+    "luz": "Magia y humor",
+    "sombra": "Tomar todo muy en serio",
+    "consejo": "No pierdas la alegría ante las tensiones materiales"
+  },
+  "172": {
+    "luz": "Sabiduría y libre albedrío",
+    "sombra": "Ser influenciable",
+    "consejo": "Sirve a otros eligiendo desde tu propia verdad"
+  },
+  "173": {
+    "luz": "Exploración y vigilancia",
+    "sombra": "Aislamiento",
+    "consejo": "Explora nuevos espacios emocionales"
+  },
+  "174": {
+    "luz": "Habitar el \"aquí y ahora\"",
+    "sombra": "Impaciencia",
+    "consejo": "Recupera tu poder habitando el eterno presente"
+  },
+  "175": {
+    "luz": "Visión superior",
+    "sombra": "Perderse en detalles",
+    "consejo": "Observa el panorama completo sin juzgar"
+  },
+  "176": {
+    "luz": "Valentía para cuestionar",
+    "sombra": "Lucha innecesaria",
+    "consejo": "Usa tu inteligencia para proponer nuevas formas de amar"
+  },
+  "177": {
+    "luz": "Sincronicidad evolutiva",
+    "sombra": "Terquedad",
+    "consejo": "Sigue los movimientos naturales de la vida"
+  },
+  "178": {
+    "luz": "Verdad sin filtros",
+    "sombra": "Juicios severos",
+    "consejo": "Refleja solo la verdad en tus vínculos"
+  },
+  "179": {
+    "luz": "Autogeneración",
+    "sombra": "Caos emocional",
+    "consejo": "Transforma las crisis en evolución"
+  },
+  "180": {
+    "luz": "Iluminación",
+    "sombra": "Ego",
+    "consejo": "Libérate del egocentrismo irradiando luz"
+  },
+  "181": {
+    "luz": "Nutrir al otro",
+    "sombra": "Falta de confianza",
+    "consejo": "Coopera cuidando las necesidades de tu comunidad"
+  },
+  "182": {
+    "luz": "Comunicación sagrada",
+    "sombra": "Manipulación",
+    "consejo": "Transciende a través de una palabra coherente"
+  },
+  "183": {
+    "luz": "Intuición y abundancia",
+    "sombra": "Miedo al vacío",
+    "consejo": "\"Sueña tu realidad\""
+  },
+  "184": {
+    "luz": "Florecimiento",
+    "sombra": "Miedo al crecimiento",
+    "consejo": "Rompe tus límites y estructuras rígidas"
+  },
+  "185": {
+    "luz": "Vitalidad corporal",
+    "sombra": "Agotamiento",
+    "consejo": "Materializa deseos colectivos con tu instinto"
+  },
+  "186": {
+    "luz": "Desapego",
+    "sombra": "Apego a ciclos viejos",
+    "consejo": "Suelta lo que impide tu crecimiento"
+  },
+  "187": {
+    "luz": "Sanación en acción",
+    "sombra": "Procrastinación",
+    "consejo": "Concreta tus proyectos pendientes"
+  },
+  "188": {
+    "luz": "Armonía y elegancia",
+    "sombra": "Autocrítica",
+    "consejo": "Crea belleza a tu alrededor"
+  },
+  "189": {
+    "luz": "Flujo emocional",
+    "sombra": "Inestabilidad",
+    "consejo": "Permite que tus sentimientos fluyan orgánicamente"
+  },
+  "190": {
+    "luz": "Lealtad al corazón",
+    "sombra": "Necesidad de afecto",
+    "consejo": "Ámate incondicionalmente primero"
+  },
+  "191": {
+    "luz": "Magia y juego",
+    "sombra": "Seriedad excesiva",
+    "consejo": "Enfrenta los retos con humor"
+  },
+  "192": {
+    "luz": "Sabiduría",
+    "sombra": "Indecisión",
+    "consejo": "Elige el camino del corazón"
+  },
+  "193": {
+    "luz": "Exploración",
+    "sombra": "Sentirse atrapado",
+    "consejo": "Explora nuevos espacios mentales y espirituales"
+  },
+  "194": {
+    "luz": "Habitar el presente",
+    "sombra": "Controlar al grupo",
+    "consejo": "Comparte el \"encanto\" de vivir sin prisa"
+  },
+  "195": {
+    "luz": "Visión superior",
+    "sombra": "Atrapado en detalles",
+    "consejo": "Observa la totalidad de tu vida con perspectiva global"
+  },
+  "196": {
+    "luz": "Valentía e intrepidez",
+    "sombra": "Agresividad",
+    "consejo": "Cuestiona dogmas establecidos"
+  },
+  "197": {
+    "luz": "Sincronicidad",
+    "sombra": "Resistencia al cambio",
+    "consejo": "Fluye con los movimientos naturales"
+  },
+  "198": {
+    "luz": "Verdad sin filtros",
+    "sombra": "Juicio severo",
+    "consejo": "Mantén un orden mental basado en convicciones reales"
+  },
+  "199": {
+    "luz": "Autogeneración",
+    "sombra": "Desconexión corporal",
+    "consejo": "Permite que las crisis te renueven internamente"
+  },
+  "200": {
+    "luz": "Amor universal",
+    "sombra": "Egocentrismo",
+    "consejo": "Inspira a otros a través de tu propia luz"
+  },
+  "201": {
+    "luz": "Nutrir el ser",
+    "sombra": "Olvido de uno mismo",
+    "consejo": "Cuida tus necesidades básicas"
+  },
+  "202": {
+    "luz": "Palabra coherente",
+    "sombra": "Mentiras",
+    "consejo": "Formaliza tus intenciones con lenguaje honesto"
+  },
+  "203": {
+    "luz": "Intuición y abundancia",
+    "sombra": "Miedo a la oscuridad",
+    "consejo": "Escucha la sabiduría del misterio"
+  },
+  "204": {
+    "luz": "Florecimiento",
+    "sombra": "Aferrarse a lo conocido",
+    "consejo": "Siembra tus dones en el entorno"
+  },
+  "205": {
+    "luz": "Vitalidad y entusiasmo",
+    "sombra": "Agotamiento físico",
+    "consejo": "Conecta con tu instinto y fuerza vital"
+  },
+  "206": {
+    "luz": "Desapego",
+    "sombra": "Resistencia al cierre",
+    "consejo": "Practica la muerte simbólica de lo que terminó"
+  },
+  "207": {
+    "luz": "Sanación grupal",
+    "sombra": "Tareas inconclusas",
+    "consejo": "Termina proyectos que beneficien a todos"
+  },
+  "208": {
+    "luz": "Belleza final",
+    "sombra": "Crítica o drama",
+    "consejo": "Haz de tu vida una obra de arte coherente"
+  },
+  "209": {
+    "luz": "Flujo emocional",
+    "sombra": "Represión",
+    "consejo": "Fluye como el agua"
+  },
+  "210": {
+    "luz": "Amor incondicional",
+    "sombra": "Dependencia",
+    "consejo": "Sé fiel a ti mismo al purificar tus vínculos"
+  },
+  "211": {
+    "luz": "Magia y humor",
+    "sombra": "Seriedad excesiva en sanación",
+    "consejo": "Recupera la alegría para servir"
+  },
+  "212": {
+    "luz": "Sabiduría",
+    "sombra": "Indecisión",
+    "consejo": "Elige desde tu verdad interna"
+  },
+  "213": {
+    "luz": "Exploración y vigilancia",
+    "sombra": "Aislamiento",
+    "consejo": "Explora nuevos espacios emocionales"
+  },
+  "214": {
+    "luz": "Habitar el \"aquí y ahora\"",
+    "sombra": "Control",
+    "consejo": "Vive sin prisa"
+  },
+  "215": {
+    "luz": "Visión superior",
+    "sombra": "Perderse en detalles",
+    "consejo": "Observa tu ecosistema emocional desde lo alto"
+  },
+  "216": {
+    "luz": "Valentía",
+    "sombra": "Lucha innecesaria",
+    "consejo": "Cuestiona tus miedos con inteligencia"
+  },
+  "217": {
+    "luz": "Sincronicidad",
+    "sombra": "Terquedad",
+    "consejo": "Fluye con las señales naturales"
+  },
+  "218": {
+    "luz": "Reflejo de la verdad",
+    "sombra": "Juicio",
+    "consejo": "Corta con las ilusiones del ego"
+  },
+  "219": {
+    "luz": "Autogeneración",
+    "sombra": "Caos",
+    "consejo": "Transforma la crisis en energía pura"
+  },
+  "220": {
+    "luz": "Amor universal",
+    "sombra": "Egocentrismo",
+    "consejo": "Irradia luz y calidez al grupo"
+  },
+  "221": {
+    "luz": "Nutrir el ser",
+    "sombra": "Falta de confianza",
+    "consejo": "Trata cada momento como un nuevo inicio"
+  },
+  "222": {
+    "luz": "Comunicación honesta",
+    "sombra": "Manipulación",
+    "consejo": "Usa lenguaje transparente"
+  },
+  "223": {
+    "luz": "Intuición y abundancia",
+    "sombra": "Miedo al vacío",
+    "consejo": "Confía en tus sueños"
+  },
+  "224": {
+    "luz": "Florecimiento",
+    "sombra": "Aferrarse a seguridad",
+    "consejo": "Ayuda a otros a romper límites rígidos"
+  },
+  "225": {
+    "luz": "Vitalidad",
+    "sombra": "Agotamiento",
+    "consejo": "Escucha a tu cuerpo al comunicar"
+  },
+  "226": {
+    "luz": "Desapego",
+    "sombra": "Resistencia al cierre",
+    "consejo": "Suelta lo que ya no sirve"
+  },
+  "227": {
+    "luz": "Sanación y realización",
+    "sombra": "Procrastinación",
+    "consejo": "Termina lo que es saludable para ti"
+  },
+  "228": {
+    "luz": "Belleza y armonía",
+    "sombra": "Drama",
+    "consejo": "Haz de tu palabra una obra de arte"
+  },
+  "229": {
+    "luz": "Fluidez emocional",
+    "sombra": "Toxicidad",
+    "consejo": "Coherencia entre emoción y espíritu"
+  },
+  "230": {
+    "luz": "Lealtad al corazón",
+    "sombra": "Necesidad de aprobación",
+    "consejo": "Ama incondicionalmente"
+  },
+  "231": {
+    "luz": "Magia y humor",
+    "sombra": "Seriedad extrema",
+    "consejo": "Exprésate a través del juego"
+  },
+  "232": {
+    "luz": "Sabiduría",
+    "sombra": "Indecisión",
+    "consejo": "Elige tu propio camino"
+  },
+  "233": {
+    "luz": "Exploración colectiva",
+    "sombra": "Desconexión",
+    "consejo": "Explora con tu comunidad"
+  },
+  "234": {
+    "luz": "\"Eterno presente\"",
+    "sombra": "Impaciencia",
+    "consejo": "Encanto en lo cotidiano"
+  },
+  "235": {
+    "luz": "Visión global",
+    "sombra": "Detallismo obsesivo",
+    "consejo": "Elévate para ver el cuadro completo"
+  },
+  "236": {
+    "luz": "Inteligencia",
+    "sombra": "Lucha",
+    "consejo": "Cuestiona tu visión con inteligencia"
+  },
+  "237": {
+    "luz": "Sincronicidad",
+    "sombra": "Terquedad",
+    "consejo": "Fluye con movimientos naturales"
+  },
+  "238": {
+    "luz": "Orden y verdad",
+    "sombra": "Juicio",
+    "consejo": "Refleja la realidad tal como es"
+  },
+  "239": {
+    "luz": "Autogeneración",
+    "sombra": "Caos",
+    "consejo": "Transforma crisis en renovación"
+  },
+  "240": {
+    "luz": "Amor universal",
+    "sombra": "Ego",
+    "consejo": "Irradia luz hacia los demás"
+  },
+  "241": {
+    "luz": "Nutrir el ser",
+    "sombra": "Desconfianza",
+    "consejo": "Cuida tus necesidades básicas mientras vuelas"
+  },
+  "242": {
+    "luz": "Palabra coherente",
+    "sombra": "Manipulación",
+    "consejo": "Comunica lo que tu visión superior percibe"
+  },
+  "243": {
+    "luz": "Intuición y sueños",
+    "sombra": "Miedo al vacío",
+    "consejo": "Sueña una realidad más amplia"
+  },
+  "244": {
+    "luz": "Florecimiento",
+    "sombra": "Aferrarse a lo conocido",
+    "consejo": "Rompe estructuras rígidas"
+  },
+  "245": {
+    "luz": "Vitalidad",
+    "sombra": "Agotamiento",
+    "consejo": "Libérate escuchando a tu cuerpo"
+  },
+  "246": {
+    "luz": "Soltar para unir",
+    "sombra": "Apego",
+    "consejo": "Cierra ciclos que no benefician al grupo"
+  },
+  "247": {
+    "luz": "Sanación final",
+    "sombra": "Procrastinación",
+    "consejo": "Concluye tu obra con sabiduría"
+  },
+  "248": {
+    "luz": "Arte, belleza y elegancia",
+    "sombra": "Autocrítica",
+    "consejo": "Haz de tu vida una obra de arte coherente"
+  },
+  "249": {
+    "luz": "Purificación emocional",
+    "sombra": "Toxicidad",
+    "consejo": "Limpia tus emociones para que brille la belleza"
+  },
+  "250": {
+    "luz": "Lealtad y amor",
+    "sombra": "Celos",
+    "consejo": "Sirve desde la nobleza del corazón"
+  },
+  "251": {
+    "luz": "Magia y juego",
+    "sombra": "Rigidez",
+    "consejo": "Arte sin perder la inocencia"
+  },
+  "252": {
+    "luz": "Sabiduría",
+    "sombra": "Influenciable",
+    "consejo": "Elige lo que es armónico para ti"
+  },
+  "253": {
+    "luz": "Exploración",
+    "sombra": "Desconexión",
+    "consejo": "Explora nuevas expresiones"
+  },
+  "254": {
+    "luz": "\"Eterno presente\"",
+    "sombra": "Orgullo",
+    "consejo": "Encanto en lo cotidiano"
+  },
+  "255": {
+    "luz": "Visión superior",
+    "sombra": "Detallismo",
+    "consejo": "Observa tu belleza globalmente"
+  },
+  "256": {
+    "luz": "Inteligencia",
+    "sombra": "Lucha",
+    "consejo": "Cuestiona lo que no es armónico"
+  },
+  "257": {
+    "luz": "Sincronicidad",
+    "sombra": "Terquedad",
+    "consejo": "Fluye con el ritmo natural de la vida"
+  },
+  "258": {
+    "luz": "Reflejo de verdad",
+    "sombra": "Ilusión",
+    "consejo": "Libérate de máscaras para que brille tu esencia"
+  },
+  "259": {
+    "luz": "Autogeneración",
+    "sombra": "Caos",
+    "consejo": "Transforma energía grupal en belleza"
+  },
+  "260": {
+    "luz": "Iluminación y amor universal final",
+    "sombra": "Ego",
+    "consejo": "Sé la luz que ilumina todo el ciclo"
+  }
+}
