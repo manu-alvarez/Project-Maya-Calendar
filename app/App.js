@@ -1,24 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ScrollView, TouchableOpacity, TextInput, Image, ImageBackground } from 'react-native';
-import { useState } from 'react';
+import { StyleSheet, Text, View, ScrollView, TouchableOpacity, TextInput, ImageBackground, Image, Platform } from 'react-native';
+import { useState, useMemo } from 'react';
+import { BlurView } from 'expo-blur';
 import reflexiones from './reflexiones_completas.json';
 import { kinFromDate } from './src/utils/kin';
 import { SELLO_NOMBRES, TONO_NOMBRES, SELLO_IMAGENES } from './src/utils/selloData';
 
-// Función para devolver fecha UTC sin horas
-function getUTCDateOnly(date: Date): Date {
-  return new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
-}
-
-// Función para mostrar fecha local basada en fecha UTC sin horas
-function mostrarFechaLocalDesdeUTC(fechaUTC: Date): string {
-  const fechaLocal = new Date(fechaUTC.getUTCFullYear(), fechaUTC.getUTCMonth(), fechaUTC.getUTCDate());
-  return fechaLocal.toLocaleDateString('es-ES', {
+// Función para mostrar fecha legible
+const formatearFechaLegible = (fecha) => {
+  return fecha.toLocaleDateString('es-ES', {
     weekday: 'long',
     year: 'numeric',
     month: 'long',
     day: 'numeric',
   });
+};
+
+function getLocalDateOnly(date) {
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+}
+
+function localDateToUTC(date) {
+  return new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
 }
 
 export default function App() {
@@ -28,152 +31,176 @@ export default function App() {
   const [inputFecha, setInputFecha] = useState('');
   const [errorFecha, setErrorFecha] = useState('');
 
-  const formatearFecha = (fecha) => {
-    const yyyy = fecha.getFullYear();
-    const mm = String(fecha.getMonth() + 1).padStart(2, '0');
-    const dd = String(fecha.getDate()).padStart(2, '0');
-    return `${yyyy}-${mm}-${dd}`;
-  };
+  // 1. Calcular Kin del día seleccionado
+  const kin = useMemo(() => {
+    const fechaLocalSinHora = getLocalDateOnly(fechaSeleccionada);
+    const fechaUTCParaKin = localDateToUTC(fechaLocalSinHora);
+    return kinFromDate(fechaUTCParaKin);
+  }, [fechaSeleccionada]);
 
-  const formatearFechaLegible = (fecha) => {
-    const opciones = { 
-      weekday: 'long', 
-      year: 'numeric', 
-      month: 'long', 
-      day: 'numeric' 
+  // 2. Calcular Onda Encantada (Kin Magnético)
+  const ondaEncantada = useMemo(() => {
+    // Formula: Kin magnético = Kin actual - (Tono actual - 1)
+    let magKin = kin.num - (kin.tono - 1);
+    
+    // Ajuste circular: si magKin <= 0, sumamos 260
+    // Ejemplo: Kin 2, Tono 3. 2 - (2) = 0 -> 260. (Sol Cósmico es anterior a Viento Lunar? No.)
+    // Espera, Kin 2 (Viento Lunar). Tono 2.
+    // 2 - (2-1) = 2 - 1 = 1 (Dragón Magnético). Correcto.
+    // Kin 1 (Dragón Magnético). Tono 1.
+    // 1 - (1-1) = 1 - 0 = 1. Correcto.
+    // Kin 260 (Sol Cósmico). Tono 13.
+    // 260 - (13-1) = 260 - 12 = 248 (Estrella Magnética). Correcto.
+    
+    // Qué pasa si Kin es 5, Tono 10? (Imposible matemáticamente en orden, pero...)
+    // El tono siempre es (kin-1)%13 + 1.
+    // Entonces kin = 13*m + k. Tono = k.
+    // magKin = (13m + k) - (k-1) = 13m + 1.
+    // Siempre 1, 14, 27... que son Tonos 1.
+    // La fórmula siempre da un número congruente con 1 mod 13?
+    // (X - ( (X-1)%13 + 1 - 1 ) ) = X - (X-1)%13.
+    // Si X = 14 (Mago). (14-1)%13 = 0. 14 - 0 = 14. Correcto.
+    
+    while (magKin <= 0) magKin += 260; 
+
+    return {
+      num: magKin,
+      sello: ((magKin - 1) % 20) + 1,
+      nombreSello: SELLO_NOMBRES[((magKin - 1) % 20) + 1]
     };
-    return fecha.toLocaleDateString('es-ES', opciones);
-  };
+  }, [kin]);
 
-// Funciones auxiliares para obtener fecha local sin horas y convertir a UTC
-function getLocalDateOnly(date) {
-  return new Date(date.getFullYear(), date.getMonth(), date.getDate());
-}
+  // 3. Obtener Reflexiones
+  // Reflexión del Kin del día
+  const reflexionKin = reflexiones[kin.num] || "No hay reflexión disponible.";
+  // Propósito de la Onda Encantada (Reflexión del Kin Magnético)
+  const reflexionOnda = reflexiones[ondaEncantada.num] || "Información de Onda Encantada no disponible.";
 
-function localDateToUTC(date) {
-  return new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
-}
-
-// Obtener fecha local sin horas y convertir a UTC para calcular Kin
-  const fechaLocalSinHora = getLocalDateOnly(fechaSeleccionada);
-  const fechaUTCParaKin = localDateToUTC(fechaLocalSinHora);
-  const kin = kinFromDate(fechaUTCParaKin);
-  const fechaParaMostrar = fechaLocalSinHora.toLocaleDateString('es-ES', {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-});
-
-  const reflexionActual = typeof reflexiones[kin.num] === 'string'
-    ? reflexiones[kin.num]
-    : "No hay reflexión para este Kin.";
-
+  // --- Handlers ---
   const diaAnterior = () => {
-  const nuevaFecha = new Date(fechaSeleccionada.getFullYear(), fechaSeleccionada.getMonth(), fechaSeleccionada.getDate());
-    nuevaFecha.setDate(nuevaFecha.getDate() - 1);
-    setFechaSeleccionada(nuevaFecha);
-    setInputFecha('');
-    setErrorFecha('');
-};
+    const nueva = new Date(fechaSeleccionada);
+    nueva.setDate(nueva.getDate() - 1);
+    setFechaSeleccionada(nueva);
+    resetInput();
+  };
 
   const diaSiguiente = () => {
-    const nuevaFecha = new Date(fechaSeleccionada.getFullYear(), fechaSeleccionada.getMonth(), fechaSeleccionada.getDate());
-    nuevaFecha.setDate(nuevaFecha.getDate() + 1);
-    setFechaSeleccionada(nuevaFecha);
-    setInputFecha('');
-    setErrorFecha('');
-};
+    const nueva = new Date(fechaSeleccionada);
+    nueva.setDate(nueva.getDate() + 1);
+    setFechaSeleccionada(nueva);
+    resetInput();
+  };
 
   const volverHoy = () => {
-    const hoyLocal = new Date();
-    const hoyMedianocheLocal = new Date(hoyLocal.getFullYear(), hoyLocal.getMonth(), hoyLocal.getDate());
-    setFechaSeleccionada(hoyMedianocheLocal);
+    const hoy = new Date();
+    setFechaSeleccionada(new Date(hoy.getFullYear(), hoy.getMonth(), hoy.getDate()));
+    resetInput();
+  };
+
+  const resetInput = () => {
     setInputFecha('');
     setErrorFecha('');
-};
+  };
 
   const cambiarFechaManual = () => {
-  if (inputFecha.match(/^\d{4}-\d{2}-\d{2}$/)) {
-    const [yyyy, mm, dd] = inputFecha.split('-').map(Number);
-    const nuevaFecha = new Date(yyyy, mm - 1, dd); // medianoche local
-    if (!isNaN(nuevaFecha.getTime())) {
-      setFechaSeleccionada(nuevaFecha);
-      setErrorFecha('');
+    if (inputFecha.match(/^\d{4}-\d{2}-\d{2}$/)) {
+      const [y, m, d] = inputFecha.split('-').map(Number);
+      const nueva = new Date(y, m - 1, d);
+      if (!isNaN(nueva.getTime())) {
+        setFechaSeleccionada(nueva);
+        setErrorFecha('');
+      } else {
+        setErrorFecha('Fecha inválida');
+      }
     } else {
-      setErrorFecha('Fecha inválida');
+      setErrorFecha('Formato: YYYY-MM-DD');
     }
-  } else {
-    setErrorFecha('Formato incorrecto. Usa YYYY-MM-DD');
-  }
-};
+  };
+
+  // Componente reutilizable para Glassmorphism
+  const GlassContainer = ({ children, style }) => (
+    <BlurView intensity={30} tint="dark" style={[styles.glassCard, style]}>
+      {children}
+    </BlurView>
+  );
 
   return (
-  <ImageBackground
-    source={require('./assets/image-background.png')}
-    style={styles.background}
-  >
-    <View style={styles.container}>
-      <Text style={styles.titulo}>Calendario Maya</Text>
-      <Text style={styles.titulo}>By ManoElectricaAzul</Text>
-      
-      {/* Kin del día */}
-      <View style={styles.kinContainer}>
-        <Image
-          source={{ uri: SELLO_IMAGENES[kin.sello] }}
-          style={styles.selloImagen}
-          resizeMode="contain"
-        />
-        <Text style={styles.kinTexto}>
-          Kin {kin.num}: {SELLO_NOMBRES[kin.sello]} · {TONO_NOMBRES[kin.tono]}
-        </Text>
-      </View>
-      
-      {/* Navegación de fechas */}
-      <View style={styles.navegacionFechas}>
-          <TouchableOpacity style={styles.botonNavegacion} onPress={diaAnterior}>
-            <Text style={styles.textoBoton}>← Anterior</Text>
-          </TouchableOpacity>
-          
-          <View style={styles.fechaActual}>
+    <ImageBackground
+      source={require('./assets/background-galaxy.png')}
+      style={styles.background}
+      resizeMode="cover"
+    >
+      <ScrollView contentContainerStyle={styles.scrollContent}>
+        <View style={styles.header}>
+          <Text style={styles.appTitle}>Calendario Maya</Text>
+          <Text style={styles.subTitle}>Sincronario de 13 Lunas</Text>
+        </View>
+
+        {/* Sección Principal: Kin del Día */}
+        <GlassContainer style={styles.mainCard}>
             <Text style={styles.fechaTexto}>{formatearFechaLegible(fechaSeleccionada)}</Text>
-          </View>
-          
-          <TouchableOpacity style={styles.botonNavegacion} onPress={diaSiguiente}>
-            <Text style={styles.textoBoton}>Siguiente →</Text>
+            
+            <View style={styles.kinHeader}>
+              <Image
+                source={{ uri: SELLO_IMAGENES[kin.sello] }}
+                style={styles.selloImagen}
+                resizeMode="contain"
+              />
+              <View>
+                <Text style={styles.kinNumero}>Kin {kin.num}</Text>
+                <Text style={styles.kinNombre}>{SELLO_NOMBRES[kin.sello]}</Text>
+                <Text style={styles.kinTono}>{TONO_NOMBRES[kin.tono]}</Text>
+              </View>
+            </View>
+
+            <View style={styles.divider} />
+            <Text style={styles.reflexionTitulo}>Esencia del Kin</Text>
+            <Text style={styles.reflexionTexto}>{reflexionKin.split('\n')[0]}</Text>
+        </GlassContainer>
+
+        {/* Sección Onda Encantada */}
+        <GlassContainer style={styles.ondaCard}>
+          <Text style={styles.ondaTitulo}>Onda Encantada del {ondaEncantada.nombreSello}</Text>
+          <Text style={styles.ondaSubtitulo}>Propósito y Energía (Kin {ondaEncantada.num})</Text>
+          <Text style={styles.ondaTexto}>
+            {/* Mostramos una parte significativa del texto, evitando que sea demasiado largo si es la misma que la reflexión del dia */}
+            {reflexionOnda}
+          </Text>
+        </GlassContainer>
+
+        {/* Controles de Navegación */}
+        <View style={styles.navContainer}>
+          <TouchableOpacity style={styles.navButton} onPress={diaAnterior}>
+            <Text style={styles.navButtonText}>← Ayer</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.todayButton} onPress={volverHoy}>
+            <Text style={styles.todayButtonText}>Hoy</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.navButton} onPress={diaSiguiente}>
+            <Text style={styles.navButtonText}>Mañana →</Text>
           </TouchableOpacity>
         </View>
 
-        {/* Botón para volver a hoy */}
-        <TouchableOpacity style={styles.botonHoy} onPress={volverHoy}>
-          <Text style={styles.textoBotonHoy}>Volver a Hoy</Text>
-        </TouchableOpacity>
-
-        {/* Input para elegir fecha manualmente */}
-        <View style={styles.inputContainer}>
+        {/* Búsqueda Manual */}
+        <GlassContainer style={styles.searchContainer}>
           <TextInput
             style={styles.input}
             placeholder="YYYY-MM-DD"
+            placeholderTextColor="rgba(255,255,255,0.6)"
             value={inputFecha}
             onChangeText={setInputFecha}
             keyboardType="numbers-and-punctuation"
           />
-          <TouchableOpacity style={styles.botonInput} onPress={cambiarFechaManual}>
-            <Text style={styles.textoBotonInput}>Ir a fecha</Text>
+          <TouchableOpacity style={styles.goButton} onPress={cambiarFechaManual}>
+            <Text style={styles.goButtonText}>Ir</Text>
           </TouchableOpacity>
-        </View>
-        {errorFecha ? <Text style={styles.error}>{errorFecha}</Text> : null}
-        
-        {/* Reflexión del día */}
-        <ScrollView style={styles.scrollContainer}>
-          <View style={styles.contenedorReflexion}>
-            <Text style={styles.reflexion}>{reflexionActual}</Text>
-          </View>
-        </ScrollView>
-        
-        <StatusBar style="auto" />
-      </View>
-  </ImageBackground>
+        </GlassContainer>
+        {errorFecha ? <Text style={styles.errorText}>{errorFecha}</Text> : null}
+
+        <View style={{ height: 40 }} />
+      </ScrollView>
+      <StatusBar style="light" />
+    </ImageBackground>
   );
 }
 
@@ -182,143 +209,206 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     height: '100%',
-    resizeMode: 'cover',
   },
-  container: {
-    flex: 1,
-    backgroundColor: 'transparent',
-    paddingTop: 50,
+  scrollContent: {
+    paddingTop: 60, // Top inset
     paddingHorizontal: 20,
+    paddingBottom: 40,
+    alignItems: 'center',
   },
-  titulo: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#ffffff',
+  header: {
     marginBottom: 20,
-    textAlign: 'center',
-  },
-  navegacionFechas: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 15,
   },
-  botonNavegacion: {
-    backgroundColor: '#3498db',
-    paddingHorizontal: 15,
-    paddingVertical: 10,
-    borderRadius: 8,
-    minWidth: 80,
+  appTitle: {
+    fontSize: 32,
+    fontWeight: '800',
+    color: '#fff',
+    textShadowColor: 'rgba(0,0,0,0.5)',
+    textShadowOffset: { width: 0, height: 2 },
+    textShadowRadius: 4,
   },
-  textoBoton: {
-    color: 'white',
-    fontWeight: 'bold',
-    textAlign: 'center',
-    fontSize: 14,
+  subTitle: {
+    fontSize: 16,
+    color: 'rgba(255,255,255,0.8)',
+    marginTop: 5,
+    fontWeight: '300',
   },
-  fechaActual: {
-    flex: 1,
+  // Glassmorphism Cards
+  glassCard: {
+    width: '100%',
+    borderRadius: 20,
+    overflow: 'hidden',
+    padding: 20,
+    marginBottom: 20,
+    // Bordes sutiles
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.2)',
+    // Sombra
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.3,
+        shadowRadius: 5,
+      },
+      android: {
+        elevation: 5,
+        backgroundColor: 'rgba(30,30,50,0.7)', // Fallback para Android si Blur no es perfecto
+      },
+      web: {
+        backgroundColor: 'rgba(30,30,50,0.6)',
+        backdropFilter: 'blur(10px)',
+      }
+    }),
+  },
+  mainCard: {
     alignItems: 'center',
-    marginHorizontal: 10,
-    backgroundColor: 'white',
-    padding: 15,
-    borderRadius: 10,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.1,
-    shadowRadius: 3.84,
-    elevation: 5,
   },
   fechaTexto: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: '#2c3e50',
-    textAlign: 'center',
+    fontSize: 18,
+    color: '#A0E8AF', // Un verde menta suave
+    fontWeight: '600',
     textTransform: 'capitalize',
+    marginBottom: 15,
   },
-  botonHoy: {
-    backgroundColor: '#e74c3c',
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    borderRadius: 8,
-    alignSelf: 'center',
-    marginBottom: 20,
-  },
-  textoBotonHoy: {
-    color: 'white',
-    fontWeight: 'bold',
-    fontSize: 14,
-  },
-  inputContainer: {
+  kinHeader: {
     flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 10,
-    justifyContent: 'center',
-  },
-  input: {
-    borderWidth: 1,
-    borderColor: '#ccc',
-    borderRadius: 8,
-    padding: 10,
-    width: 120,
-    marginRight: 10,
-    backgroundColor: 'white',
-  },
-  botonInput: {
-    backgroundColor: '#27ae60',
-    paddingHorizontal: 15,
-    paddingVertical: 10,
-    borderRadius: 8,
-  },
-  textoBotonInput: {
-    color: 'white',
-    fontWeight: 'bold',
-    fontSize: 14,
-  },
-  error: {
-    color: 'red',
-    textAlign: 'center',
-    marginBottom: 10,
-  },
-  scrollContainer: {
-    flex: 1,
-  },
-  contenedorReflexion: {
-    backgroundColor: 'white',
-    borderRadius: 10,
-    padding: 20,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.1,
-    shadowRadius: 3.84,
-    elevation: 5,
-    marginBottom: 20,
-  },
-  reflexion: {
-    fontSize: 16,
-    lineHeight: 24,
-    color: '#34495e',
-    textAlign: 'justify',
-  },
-  kinContainer: {
     alignItems: 'center',
     marginBottom: 15,
   },
   selloImagen: {
-    width: 100,
-    height: 100,
-    marginBottom: 8,
+    width: 80,
+    height: 80,
+    marginRight: 20,
   },
-  kinTexto: {
-    fontSize: 18,
+  kinNumero: {
+    fontSize: 16,
+    color: '#FFD700', // Dorado
     fontWeight: 'bold',
-    color: '#ffffff',
+  },
+  kinNombre: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#fff',
+    textShadowColor: 'rgba(0,0,0,0.5)',
+    textShadowRadius: 3,
+  },
+  kinTono: {
+    fontSize: 20,
+    color: '#EEE',
+    fontStyle: 'italic',
+  },
+  divider: {
+    width: '100%',
+    height: 1,
+    backgroundColor: 'rgba(255,255,255,0.2)',
+    marginVertical: 15,
+  },
+  reflexionTitulo: {
+    fontSize: 14,
+    color: 'rgba(255,255,255,0.7)',
+    marginBottom: 5,
+    textTransform: 'uppercase',
+    letterSpacing: 1,
+  },
+  reflexionTexto: {
+    fontSize: 16,
+    color: '#fff',
     textAlign: 'center',
+    lineHeight: 22,
+  },
+  
+  // Card Onda Encantada
+  ondaCard: {
+    // Estilos extra si se requieren
+  },
+  ondaTitulo: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#9D65E8', // Un lila vibrante
+    marginBottom: 5,
+    textAlign: 'center',
+  },
+  ondaSubtitulo: {
+    fontSize: 14,
+    color: 'rgba(255,255,255,0.6)',
+    textAlign: 'center',
+    marginBottom: 10,
+    fontStyle: 'italic',
+  },
+  ondaTexto: {
+    fontSize: 15,
+    color: 'rgba(255,255,255,0.9)',
+    lineHeight: 22,
+    textAlign: 'justify',
+  },
+
+  // Navegación
+  navContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    width: '100%',
+    marginBottom: 20,
+  },
+  navButton: {
+    backgroundColor: 'rgba(255,255,255,0.2)',
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 25,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.3)',
+  },
+  navButtonText: {
+    color: '#fff',
+    fontWeight: '600',
+  },
+  todayButton: {
+    backgroundColor: '#FF6B6B',
+    paddingVertical: 12,
+    paddingHorizontal: 30,
+    borderRadius: 25,
+    shadowColor: '#FF6B6B',
+    shadowOpacity: 0.5,
+    shadowRadius: 8,
+    elevation: 4,
+  },
+  todayButtonText: {
+    color: '#fff',
+    fontWeight: 'bold',
+  },
+
+  // Buscador
+  searchContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 10,
+  },
+  input: {
+    flex: 1,
+    height: 40,
+    color: '#fff',
+    fontSize: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgba(255,255,255,0.5)',
+    marginRight: 10,
+    paddingHorizontal: 5,
+  },
+  goButton: {
+    backgroundColor: 'rgba(100,220,150,0.8)',
+    paddingVertical: 8,
+    paddingHorizontal: 15,
+    borderRadius: 8,
+  },
+  goButtonText: {
+    color: '#fff',
+    fontWeight: 'bold',
+  },
+  errorText: {
+    color: '#FF4444',
+    marginTop: -10,
+    marginBottom: 10,
+    fontWeight: 'bold',
   },
 });
