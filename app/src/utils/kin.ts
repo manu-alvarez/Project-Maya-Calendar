@@ -64,7 +64,7 @@ export function kinFromDate(d: Date): Kin {
 
 // Diccionarios para nombres y colores
 export const SELLO_NOMBRES = {
-  1: 'Dragón',  2: 'Viento', 3: 'Noche', 4: 'Semilla',
+  1: 'Dragón', 2: 'Viento', 3: 'Noche', 4: 'Semilla',
   5: 'Serpiente', 6: 'Enlazador', 7: 'Mano', 8: 'Estrella',
   9: 'Luna', 10: 'Perro', 11: 'Mono', 12: 'Humano',
   13: 'Caminante', 14: 'Mago', 15: 'Águila', 16: 'Guerrero',
@@ -82,5 +82,6 @@ export const COLOR_NOMBRES = {
 };
 
 export function colorFromSello(sello: number): string {
-  return COLOR_NOMBRES[((sello - 1) % 4) + 1];
+  const colorIndex = ((sello - 1) % 4) + 1;
+  return COLOR_NOMBRES[colorIndex as keyof typeof COLOR_NOMBRES];
 }
