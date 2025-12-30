@@ -24,7 +24,7 @@ echo.
 
 REM Paso 2: Navegar a android
 echo [2/5] Navegando a carpeta android...
-cd /d "%~dp0android"
+cd /d "%~dp0..\android"
 if %ERRORLEVEL% NEQ 0 (
     echo ERROR: No se pudo acceder a la carpeta android
     pause
