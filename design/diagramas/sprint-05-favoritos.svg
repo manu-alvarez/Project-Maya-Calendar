@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
+  <style>
+    .title { font: 700 20px 'Helvetica Neue', Arial, sans-serif; fill: #0d47a1; }
+    .block-title { font: 600 16px 'Helvetica Neue', Arial, sans-serif; fill: #1e88e5; }
+    .text { font: 400 13px 'Helvetica Neue', Arial, sans-serif; fill: #263238; }
+  </style>
+  <rect width="800" height="320" fill="#fafafa"/>
+  <text x="40" y="50" class="title">Sprint 5 · Flujo Favoritos (Plan)</text>
+
+  <rect x="40" y="90" width="220" height="180" rx="12" ry="12" fill="#e3f2fd" stroke="#1e88e5" stroke-width="2"/>
+  <text x="150" y="120" class="block-title" text-anchor="middle">Modelo de datos</text>
+  <foreignObject x="55" y="130" width="190" height="120">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238;">
+      <ul style="margin:0; padding-left:18px;">
+        <li>ID del Kin</li>
+        <li>Categorías / etiquetas</li>
+        <li>Notas breves</li>
+        <li>Timestamp último acceso</li>
+      </ul>
+    </body>
+  </foreignObject>
+
+  <rect x="300" y="90" width="220" height="180" rx="12" ry="12" fill="#ede7f6" stroke="#5e35b1" stroke-width="2"/>
+  <text x="410" y="120" class="block-title" text-anchor="middle">Acciones</text>
+  <foreignObject x="315" y="130" width="190" height="120">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238;">
+      <ul style="margin:0; padding-left:18px;">
+        <li>Añadir / eliminar favorito</li>
+        <li>Asignar etiquetas</li>
+        <li>Ordenar y filtrar</li>
+      </ul>
+    </body>
+  </foreignObject>
+
+  <rect x="560" y="90" width="200" height="180" rx="12" ry="12" fill="#e8f5e9" stroke="#43a047" stroke-width="2"/>
+  <text x="660" y="120" class="block-title" text-anchor="middle">UI</text>
+  <foreignObject x="575" y="130" width="170" height="120">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238;">
+      <ul style="margin:0; padding-left:18px;">
+        <li>Pantalla lista de favoritos</li>
+        <li>Acceso rápido en home</li>
+        <li>Contador &amp; estados vacíos</li>
+      </ul>
+    </body>
+  </foreignObject>
+
+  <text x="40" y="280" class="text">Estado: planificado · Dependencias: almacenamiento local, métricas de adopción.</text>
+</svg>
