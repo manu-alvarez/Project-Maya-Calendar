@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="320" viewBox="0 0 840 320">
+  <style>
+    .title { font: 700 20px 'Helvetica Neue', Arial, sans-serif; fill: #0d47a1; }
+    .label { font: 600 16px 'Helvetica Neue', Arial, sans-serif; fill: #1e88e5; }
+    .text { font: 400 13px 'Helvetica Neue', Arial, sans-serif; fill: #263238; }
+  </style>
+  <rect width="840" height="320" fill="#fafafa"/>
+  <text x="40" y="50" class="title">Sprint 6 · Flujo Notificaciones (Plan)</text>
+
+  <rect x="40" y="90" width="220" height="180" rx="12" ry="12" fill="#e3f2fd" stroke="#1e88e5" stroke-width="2"/>
+  <text x="150" y="120" class="label" text-anchor="middle">Permisos &amp; Opt-in</text>
+  <foreignObject x="55" y="130" width="190" height="120">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238;">
+      <ul style="margin:0; padding-left:18px;">
+        <li>Solicitar permiso</li>
+        <li>Explicar beneficios</li>
+        <li>Guardar preferencia</li>
+      </ul>
+    </body>
+  </foreignObject>
+
+  <rect x="300" y="90" width="220" height="180" rx="12" ry="12" fill="#ede7f6" stroke="#5e35b1" stroke-width="2"/>
+  <text x="410" y="120" class="label" text-anchor="middle">Scheduler</text>
+  <foreignObject x="315" y="130" width="190" height="120">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238;">
+      <ul style="margin:0; padding-left:18px;">
+        <li>Kin diario 07:00 local</li>
+        <li>Recordatorios personalizados</li>
+        <li>Eventos especiales</li>
+      </ul>
+    </body>
+  </foreignObject>
+
+  <rect x="560" y="90" width="220" height="180" rx="12" ry="12" fill="#e8f5e9" stroke="#43a047" stroke-width="2"/>
+  <text x="670" y="120" class="label" text-anchor="middle">Centro de preferencias</text>
+  <foreignObject x="575" y="130" width="190" height="120">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="font: 400 13px 'Helvetica Neue', Arial, sans-serif; color:#263238;">
+      <ul style="margin:0; padding-left:18px;">
+        <li>Toggle notificaciones</li>
+        <li>Frecuencia semanal</li>
+        <li>Copys localizados</li>
+      </ul>
+    </body>
+  </foreignObject>
+
+  <text x="40" y="280" class="text">Métricas: opt-in 70%, CTR 30%. Integrar con analytics y respetar políticas de privacidad.</text>
+</svg>
