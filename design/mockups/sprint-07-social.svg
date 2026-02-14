@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <style>
+    .title { font: 700 20px 'Helvetica Neue', Arial, sans-serif; fill: #0d47a1; }
+    .text { font: 400 14px 'Helvetica Neue', Arial, sans-serif; fill: #263238; }
+  </style>
+  <rect width="640" height="360" fill="#fafafa"/>
+  <text x="40" y="60" class="title">Plantilla Social · Kin 63</text>
+  <rect x="40" y="90" width="280" height="260" rx="20" ry="20" fill="#ffffff" stroke="#1e88e5" stroke-width="2"/>
+  <text x="180" y="150" text-anchor="middle" font-family="'Helvetica Neue', Arial" font-size="48" fill="#1e88e5">63</text>
+  <text x="180" y="190" text-anchor="middle" font-family="'Helvetica Neue', Arial" font-size="18" fill="#0d47a1">Mano Espectral · Tono 11</text>
+  <text x="180" y="220" text-anchor="middle" font-family="'Helvetica Neue', Arial" font-size="14" fill="#424242">"Libera lo que ya cumplió su propósito."</text>
+  <text x="180" y="260" text-anchor="middle" font-family="'Helvetica Neue', Arial" font-size="12" fill="#757575">Compartido desde Calendario Maya</text>
+
+  <rect x="360" y="120" width="220" height="60" rx="12" ry="12" fill="#1e88e5"/>
+  <text x="470" y="157" text-anchor="middle" font-family="'Helvetica Neue', Arial" font-size="16" fill="#ffffff">Compartir</text>
+
+  <text x="360" y="210" class="text">Acciones planificadas:</text>
+  <text x="360" y="235" class="text">• Guardar imagen</text>
+  <text x="360" y="255" class="text">• Compartir vía WhatsApp / redes</text>
+  <text x="360" y="275" class="text">• Copiar enlace + código referido</text>
+</svg>
